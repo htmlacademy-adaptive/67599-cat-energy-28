@@ -1,0 +1,19 @@
+@use "../variables.scss";
+
+.site-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item {
+  text-decoration: none;
+}
+
+.site-list__link {
+  display: block;
+  text-decoration: none;
+  color: variables.$color-black;
+  padding: 22px 0;
+}
+

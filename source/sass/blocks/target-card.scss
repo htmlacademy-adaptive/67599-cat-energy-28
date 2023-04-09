@@ -1,0 +1,23 @@
+@use "../variables.scss";
+
+.target-card__title {
+  font-family: variables.$font-title;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.target-card__description {
+  color: variables.$color-gray-2;
+}
+
+.target-card__link {
+  font-family: variables.$font-title;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: variables.$color-black;
+  text-decoration: none;
+}

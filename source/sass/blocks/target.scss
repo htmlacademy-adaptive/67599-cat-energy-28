@@ -1,0 +1,6 @@
+@use "../variables.scss";
+
+.target__item {
+  padding: 20px;
+  background-color: variables.$color-gray-1;
+}

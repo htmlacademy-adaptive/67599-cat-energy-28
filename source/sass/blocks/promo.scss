@@ -1,0 +1,33 @@
+@use "../variables.scss";
+
+.promo {
+  padding: 27px;
+  color: variables.$color-white;
+  background-color: variables.$color-background;
+  background-image: url("../img/background/promo-mobile.jpg");
+  text-align: center;
+}
+
+.promo__title {
+  font-family: variables.$font-title;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.promo__text {
+  font-family: variables.$font-title;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.promo__button {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 7px 44px;
+}

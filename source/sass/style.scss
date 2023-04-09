@@ -1,1 +1,20 @@
-// Начните писать стили здесь
+// Переменные
+// @use "./variables.scss";
+
+// Шрифты
+@use "./fonts.scss";
+
+// Общие стили
+@use "./base.scss";
+
+// blocks
+@use "./blocks/page.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/site-list.scss";
+@use "./blocks/main.scss";
+@use "./blocks/promo.scss";
+@use "./blocks/button.scss";
+@use "./blocks/target.scss";
+@use "./blocks/target-card.scss";
+@use "./blocks/works.scss";
+@use "./blocks/example.scss";
