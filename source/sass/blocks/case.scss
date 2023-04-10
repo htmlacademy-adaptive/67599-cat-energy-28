@@ -1,0 +1,28 @@
+@use "../variables.scss";
+
+.case__title {
+  font-family: variables.$font-title;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: variables.$color-black;
+}
+
+.case__description {
+  color: variables.$color-gray-2;
+  margin-bottom: 20px;
+}
+
+.case__result {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.case__total {
+  font-family: variables.$font-title;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}

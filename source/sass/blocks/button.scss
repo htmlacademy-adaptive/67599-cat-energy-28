@@ -9,3 +9,8 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.button--more {
+  color: variables.$color-gray-2;
+  background-color: variables.$color-gray-1;
+}

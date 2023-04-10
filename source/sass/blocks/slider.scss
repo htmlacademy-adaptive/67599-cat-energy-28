@@ -1,0 +1,15 @@
+@use "../variables.scss";
+
+.slider__list {
+  padding: 0;
+  list-style: none;
+}
+
+.slider__button {
+  width: 40px;
+  height: 40px;
+  background: variables.$color-white;
+  border: 2px solid variables.$color-gray-4;
+  border-radius: 20px;
+  cursor: pointer;
+}

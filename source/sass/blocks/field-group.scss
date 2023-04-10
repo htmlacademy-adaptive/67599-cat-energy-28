@@ -1,0 +1,44 @@
+@use "../variables.scss";
+
+.field-group {
+  border: none;
+  padding: 20px 0;
+}
+
+.field-group__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.field-group__item {
+  margin-bottom: 14px;
+}
+
+.field-group__description {
+  font-family: variables.$font-title;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: variables.$color-gray-2;
+  margin-right: 13px;
+}
+
+.field-group__input {
+  font-family: variables.$font-title;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: variables.$color-gray-2;
+  padding: 14px 20px;
+}
+
+.field-group__title {
+  font-family: variables.$font-title;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: variables.$color-black;
+}

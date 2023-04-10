@@ -1,0 +1,26 @@
+@use "../variables.scss";
+
+.additional__title {
+  font-family: variables.$font-title;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: variables.$color-black;
+}
+
+.additional__list {
+  padding: 0;
+  list-style: none;
+}
+
+.card-additional__block {
+  line-height: 14px;
+  color: variables.$color-gray-2;
+}
+
+.card-additional__button {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 109px;
+}

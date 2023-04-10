@@ -1,0 +1,16 @@
+@use "../variables.scss";
+
+.present {
+  color: variables.$color-white;
+  background-color: variables.$color-background;
+  background-image: url("../../img/background/promo-mobile.jpg");
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.present__description {
+  padding: 40px 0;
+  font-size: 16px;
+  line-height: 20px;
+}

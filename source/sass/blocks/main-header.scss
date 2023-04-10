@@ -1,0 +1,10 @@
+@use "../variables.scss";
+
+.main-header {
+  padding: 20px;
+}
+
+.main-header__block {
+  display: flex;
+  justify-content: space-between;
+}

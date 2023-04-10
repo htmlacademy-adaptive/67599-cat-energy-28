@@ -1,0 +1,33 @@
+@use "../variables.scss";
+
+.card {
+  padding: 20px 0;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__subtitle {
+  font-family: variables.$font-title;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: variables.$color-gray-5;
+}
+
+.card__description {
+  font-size: 12px;
+  line-height: 16px;
+  color: variables.$color-gray-2;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.card__button {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 109px;
+}
