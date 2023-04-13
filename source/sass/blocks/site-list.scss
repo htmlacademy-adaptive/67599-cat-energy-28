@@ -1,9 +1,8 @@
 @use "../variables.scss";
+@use "../mixins.scss";
 
 .site-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include mixins.list-style;
 }
 
 .site-list__item {
@@ -13,6 +12,6 @@
 .site-list__link {
   display: block;
   text-decoration: none;
-  color: variables.$color-black;
+  color: variables.$color-title;
   padding: 22px 0;
 }

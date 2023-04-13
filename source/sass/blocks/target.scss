@@ -1,6 +1,9 @@
 @use "../variables.scss";
 
-.target__item {
+.target {
   padding: 20px;
-  background-color: variables.$color-gray-1;
+}
+
+.target__item:not(:last-child) {
+  margin-bottom: 20px;
 }

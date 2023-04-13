@@ -1,15 +1,19 @@
 @use "../variables.scss";
+@use "../mixins.scss";
 
 .slider__list {
-  padding: 0;
-  list-style: none;
+  @include mixins.list-style;
+}
+
+.slider__swiper {
+  text-align: center;
 }
 
 .slider__button {
   width: 40px;
   height: 40px;
-  background: variables.$color-white;
-  border: 2px solid variables.$color-gray-4;
+  background: variables.$color-title-second;
+  border: 2px solid variables.$color-border;
   border-radius: 20px;
   cursor: pointer;
 }

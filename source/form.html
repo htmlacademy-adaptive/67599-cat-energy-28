@@ -2,25 +2,25 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page__header main-header">
-    <div class="main-header__block">
-      <a class="main-header__logo logo">
-        <img class="logo__image" src="./img/logo-mobile.svg" width="33" height="37" alt="Логотип «Кэт энерджи».">
-        <img class="logo__text" src="./img/logo-sign-mobile.svg" width="101" height="18" alt="Логотип «CAT ENERGY».">
-      </a>
-      <button class="main-header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
-      </button>
-    </div>
+    <a class="main-header__logo logo">
+      <img class="logo__image" src="./img/logo-mobile.svg" width="33" height="37" alt="Логотип «Кэт энерджи».">
+      <img class="logo__text" src="./img/logo-sign-mobile.svg" width="101" height="18" alt="Товарный знак «Кэт энерджи».">
+    </a>
 
     <nav class="main-nav">
       <div class="main-nav__wrapper"> <!-- В будущем обратить внимание на целесообразность обертки -->
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
@@ -53,8 +53,8 @@
             <ul class="field-group__list">
               <li class="field-group__item">
                 <label class="field-group__description" for="field-group__name">Имя*</label>
-                <input class="field-group__input" type="text" id="field-group__name" name="cat-name" placeholder="Барсик"
-                  required>
+                <input class="field-group__input" type="text" id="field-group__name" name="cat-name"
+                  placeholder="Барсик" required>
               </li>
 
               <li class="field-group__item">
@@ -117,7 +117,7 @@
           <fieldset class="form__field field-group">
             <legend class="field-group__title">Комментарий</legend>
             <label class="field-group__description">
-              <textarea class="field-group__input" rows="10" cols="30" name="comment">Расскажите обо всех повадках кота</textarea>
+              <textarea class="field-group__input field-group__input--textarea"        name="comment">Расскажите обо всех повадках кота</textarea>
             </label>
           </fieldset>
 
@@ -162,24 +162,21 @@
         </form>
       </div>
     </section>
-
-    <section class="page-form__section contacts">
-      <div class="contacts__wrapper"> <!-- В будущем обратить внимание на целесообразность обертки -->
-        <h2 class="visually-hidden">Контакты.</h2>
-        <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
-        <div class="contacts__address address">
-          <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="address__city">Санкт-Петербург</p>
-        </div>
-      </div>
-
-      <img class="contacts__map" src="./img/map-mobile.png" width="320" height="362" alt="Карта расположения офиса.">
-    </section>
   </main>
 
   <footer class="page__footer main-footer">
     <div class="main-footer__wrapper"> <!-- В будущем обратить внимание на целесообразность обертки -->
-      <a class="main-footer__logo logo">
+      <section class="main-footer__contacts contacts">
+        <div class="contacts__data contacts__data--background">
+          <h2 class="visually-hidden">Контакты.</h2>
+          <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+
+        <img class="contacts__map" src="./img/map-mobile.png" width="320" height="362" alt="Карта расположения офиса.">
+      </section>
+
+      <a class="main-footer__logo logo logo--footer">
         <img class="logo__text" src="./img/logo-sign-mobile.svg" width="128" height="24" alt="Логотип «CAT ENERGY».">
       </a>
 
@@ -187,16 +184,19 @@
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Мы в Вконтакте.</span>
+            <img class="social__image" src="./img/vkontakte.svg" width="28" height="22" alt="Вконтакте.">
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Мы в Ютубе.</span>
+            <img class="social__image" src="./img/youtube.svg" width="28" height="22" alt=">Ютуб.">
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Мы в Телеграме.</span>
+            <img class="social__image" src="./img/telegram.svg" width="28" height="22" alt=">Телеграм.">
           </a>
         </li>
       </ul>
@@ -204,6 +204,8 @@
       <div class="main-footer__developer developer">
         <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
           HTML Academy
+        </a>
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="developer__image" src="./img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy.">
         </a>
       </div>

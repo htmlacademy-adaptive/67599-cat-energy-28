@@ -1,5 +1,11 @@
 @use "../variables.scss";
 
+.result {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
 .result__block {
   text-align: center;
 }
@@ -14,7 +20,7 @@
 }
 
 .result__annotation {
-  color: variables.$color-gray-2;
+  color: variables.$color-text;
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;

@@ -5,18 +5,20 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: variables.$color-black;
+  color: variables.$color-title;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .case__description {
-  color: variables.$color-gray-2;
+  color: variables.$color-text;
+  margin: 0;
   margin-bottom: 20px;
 }
 
 .case__result {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .case__total {
@@ -25,4 +27,6 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
 }

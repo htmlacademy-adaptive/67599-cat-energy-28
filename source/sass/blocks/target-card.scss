@@ -1,15 +1,27 @@
 @use "../variables.scss";
 
+.target-card {
+  box-sizing: border-box;
+  padding: 30px 20px 18px;
+  background-color: variables.$color-background-second;
+  width: 280px;
+}
+
 .target-card__title {
   font-family: variables.$font-title;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+  text-align: center;
 }
 
 .target-card__description {
-  color: variables.$color-gray-2;
+  color: variables.$color-text;
+  margin: 0;
+  margin-bottom: 38px;
 }
 
 .target-card__link {
@@ -18,6 +30,6 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: variables.$color-black;
+  color: variables.$color-title;
   text-decoration: none;
 }

@@ -2,7 +2,7 @@
 
 
 .button {
-  color: variables.$color-white;
+  color: variables.$color-title-second;
   background-color: variables.$color-background;
   border: none;
   font-family: variables.$font-title;
@@ -11,6 +11,6 @@
 }
 
 .button--more {
-  color: variables.$color-gray-2;
-  background-color: variables.$color-gray-1;
+  color: variables.$color-text;
+  background-color: variables.$color-background-second;
 }

@@ -1,21 +1,34 @@
 @use "../variables.scss";
+@use "../mixins.scss";
+
+.additional {
+  padding: 25px 0 0;
+}
 
 .additional__title {
   font-family: variables.$font-title;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  color: variables.$color-black;
+  color: variables.$color-title;
+  margin: 0;
+  margin-bottom: 36px;
 }
 
 .additional__list {
-  padding: 0;
-  list-style: none;
+  @include mixins.list-style;
+  margin-bottom: 50px;
+}
+
+.additional__item {
+  margin-bottom: 19px;
 }
 
 .card-additional__block {
+  display: flex;
+  justify-content: space-between;
   line-height: 14px;
-  color: variables.$color-gray-2;
+  color: variables.$color-text;
 }
 
 .card-additional__button {

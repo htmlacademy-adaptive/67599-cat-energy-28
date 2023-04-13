@@ -1,4 +1,5 @@
 @use "../variables.scss";
+@use "../mixins.scss";
 
 .works {
   padding: 20px;
@@ -9,14 +10,16 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: variables.$color-black;
+  color: variables.$color-title;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .works__list {
-  list-style: none;
-  color: variables.$color-gray-2;
+  @include mixins.list-style;
+  color: variables.$color-text;
 }
 
 .works__item {
-  padding-bottom: 26px;
+  margin-bottom: 20px;
 }

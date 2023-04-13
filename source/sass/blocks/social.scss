@@ -1,1 +1,11 @@
 @use "../variables.scss";
+@use "../mixins.scss";
+
+.social {
+  @include mixins.list-style;
+  padding: 20px 0;
+  background-color: variables.$color-background-second;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}

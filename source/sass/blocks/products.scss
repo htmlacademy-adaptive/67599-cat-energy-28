@@ -1,6 +1,6 @@
 @use "../variables.scss";
+@use "../mixins.scss";
 
 .products__list {
-  padding: 0;
-  list-style: none;
+  @include mixins.list-style;
 }

@@ -1,18 +1,25 @@
 @use "../variables.scss";
 
+.show-more {
+  padding: 49px 0 25px;
+  text-align: center;
+}
+
 .show-more__subtitle {
   font-family: variables.$font-title;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: variables.$color-gray-6;
+  color: variables.$color-subtitle-second;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .show-more__text {
   font-size: 12px;
   line-height: 16px;
-  color: variables.$color-gray-2;
+  color: variables.$color-text;
   margin: 0;
   margin-bottom: 21px;
 }

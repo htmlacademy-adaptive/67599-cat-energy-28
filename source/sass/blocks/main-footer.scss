@@ -1,6 +1,6 @@
 @use "../variables.scss";
 
-.main-footer {
-  padding: 20px;
-  background-color: variables.$color-gray-1;
+.main-footer__logo {
+  padding: 40px 0 20px;
+  background-color: variables.$color-background-second;
 }
