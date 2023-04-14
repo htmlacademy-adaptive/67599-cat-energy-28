@@ -1,0 +1,6 @@
+@use "../variables.scss";
+@use "../mixins.scss";
+
+.products__list {
+  @include mixins.list-style;
+}

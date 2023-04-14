@@ -1,0 +1,15 @@
+@use "../variables.scss";
+
+.page-catalog {
+  padding: 27px 20px 35px;
+}
+
+.page-catalog__title {
+  font-family: variables.$font-title;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: variables.$color-title;
+  margin: 0;
+  margin-bottom: 40px;
+}

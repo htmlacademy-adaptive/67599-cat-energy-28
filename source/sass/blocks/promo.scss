@@ -1,0 +1,37 @@
+@use "../variables.scss";
+
+.promo {
+  padding: 27px 20px;
+  color: variables.$color-title-second;
+  background-image: url("../img/background/promo-mobile.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.promo__title {
+  font-family: variables.$font-title;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.promo__text {
+  font-family: variables.$font-title;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.promo__button {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 7px 44px;
+}

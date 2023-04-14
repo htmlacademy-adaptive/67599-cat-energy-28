@@ -1,0 +1,60 @@
+@use "../variables.scss";
+@use "../mixins.scss";
+
+.field-group {
+  border: none;
+}
+
+.field-group__list {
+  @include mixins.list-style;
+  padding: 0 20px;
+  margin-bottom: 45px;
+}
+
+.field-group__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.field-group__description {
+  font-family: variables.$font-title;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: variables.$color-text;
+  margin-right: 13px;
+}
+
+.field-group__input {
+  font-family: variables.$font-title;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: variables.$color-text;
+  padding: 14px 20px;
+  width: 100%;
+
+  &--textarea {
+    display: block;
+    box-sizing: border-box;
+    padding: 9px 15px;
+    resize: none;
+    width: 280px;
+    min-height: 150px;
+    margin: 0 auto;
+  }
+}
+
+.field-group__title {
+  font-family: variables.$font-title;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: variables.$color-title;
+  margin-left: 20px;
+  margin-bottom: 35px;
+}

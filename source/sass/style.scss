@@ -1,1 +1,38 @@
-// Начните писать стили здесь
+// Шрифты
+@use "./fonts.scss";
+
+// Общие стили
+@use "./base.scss";
+
+// blocks
+@use "./blocks/page.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/site-list.scss";
+@use "./blocks/main.scss";
+@use "./blocks/promo.scss";
+@use "./blocks/button.scss";
+@use "./blocks/target.scss";
+@use "./blocks/target-card.scss";
+@use "./blocks/works.scss";
+@use "./blocks/example.scss";
+@use "./blocks/case.scss";
+@use "./blocks/result.scss";
+@use "./blocks/slider.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/main-footer.scss";
+@use "./blocks/social.scss";
+@use "./blocks/developer.scss";
+@use "./blocks/page-form.scss";
+@use "./blocks/form-group.scss";
+@use "./blocks/form.scss";
+@use "./blocks/field-group.scss";
+@use "./blocks/control.scss";
+@use "./blocks/page-catalog.scss";
+@use "./blocks/products.scss";
+@use "./blocks/card.scss";
+@use "./blocks/show-more.scss";
+@use "./blocks/additional.scss";
+@use "./blocks/card-additional.scss";
+@use "./blocks/present.scss";
+@use "./blocks/logo.scss";

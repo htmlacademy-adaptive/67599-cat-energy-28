@@ -1,0 +1,16 @@
+@use "../variables.scss";
+
+
+.button {
+  color: variables.$color-title-second;
+  background-color: variables.$color-background;
+  border: none;
+  font-family: variables.$font-title;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button--more {
+  color: variables.$color-text;
+  background-color: variables.$color-background-second;
+}

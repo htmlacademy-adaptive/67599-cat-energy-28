@@ -1,0 +1,17 @@
+@use "../variables.scss";
+@use "../mixins.scss";
+
+.site-list {
+  @include mixins.list-style;
+}
+
+.site-list__item {
+  text-decoration: none;
+}
+
+.site-list__link {
+  display: block;
+  text-decoration: none;
+  color: variables.$color-title;
+  padding: 22px 0;
+}

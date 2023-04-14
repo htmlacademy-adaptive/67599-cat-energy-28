@@ -1,0 +1,6 @@
+@use "../variables.scss";
+
+.example {
+  padding: 25px 20px 40px;
+  background-color: variables.$color-background-third;
+}

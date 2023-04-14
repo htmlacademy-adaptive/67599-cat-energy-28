@@ -1,0 +1,25 @@
+@use "../variables.scss";
+@use "../mixins.scss";
+
+.works {
+  padding: 20px;
+}
+
+.works__title {
+  font-family: variables.$font-title;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: variables.$color-title;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.works__list {
+  @include mixins.list-style;
+  color: variables.$color-text;
+}
+
+.works__item {
+  margin-bottom: 20px;
+}

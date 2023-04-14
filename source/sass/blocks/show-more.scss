@@ -1,0 +1,32 @@
+@use "../variables.scss";
+
+.show-more {
+  padding: 49px 0 25px;
+  text-align: center;
+}
+
+.show-more__subtitle {
+  font-family: variables.$font-title;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: variables.$color-subtitle-second;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.show-more__text {
+  font-size: 12px;
+  line-height: 16px;
+  color: variables.$color-text;
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.show-more__button {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 94px;
+}

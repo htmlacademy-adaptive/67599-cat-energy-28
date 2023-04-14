@@ -1,0 +1,14 @@
+@use "../variables.scss";
+
+
+.logo {
+  display: flex;
+
+  &--footer {
+    justify-content: center;
+  }
+}
+
+.logo__image {
+  margin-right: 56px;
+}

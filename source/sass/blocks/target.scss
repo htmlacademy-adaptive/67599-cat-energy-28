@@ -1,0 +1,9 @@
+@use "../variables.scss";
+
+.target {
+  padding: 20px;
+}
+
+.target__item:not(:last-child) {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,30 @@
+@use "../variables.scss";
+
+.contacts__data {
+  padding: 26px 20px;
+  display: flex;
+
+  &--background {
+    background-color: variables.$color-background-second;
+  }
+}
+
+.contacts__invite {
+  font-family: variables.$font-title;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  width: 50%;
+}
+
+.contacts__address {
+  width: 50%;
+  color: variables.$color-text;
+  line-height: 20px;
+  margin: 0;
+}
+
+.contacts__map {
+  display: block;
+}
