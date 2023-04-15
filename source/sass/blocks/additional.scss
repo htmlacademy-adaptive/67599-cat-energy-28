@@ -5,6 +5,10 @@
   padding: 25px 0 0;
 }
 
+.additional__present {
+  min-height: 289px;
+}
+
 .additional__title {
   font-family: variables.$font-title;
   font-weight: 400;
@@ -22,18 +26,4 @@
 
 .additional__item {
   margin-bottom: 19px;
-}
-
-.card-additional__block {
-  display: flex;
-  justify-content: space-between;
-  line-height: 14px;
-  color: variables.$color-text;
-}
-
-.card-additional__button {
-  display: inline-block;
-  font-size: 16px;
-  line-height: 20px;
-  padding: 10px 109px;
 }

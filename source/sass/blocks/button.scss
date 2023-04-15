@@ -8,9 +8,19 @@
   font-family: variables.$font-title;
   text-transform: uppercase;
   text-decoration: none;
-}
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
 
-.button--more {
-  color: variables.$color-text;
-  background-color: variables.$color-background-second;
+  &--more {
+    color: variables.$color-text;
+    background-color: variables.$color-background-second;
+  }
+
+  &--choose {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }

@@ -4,7 +4,7 @@
   padding: 20px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 40px;
+  grid-template-rows: 1fr 1fr minmax(40px, auto);
 }
 
 .card__link {
@@ -30,6 +30,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: variables.$color-subtitle;
+  margin: 0;
 }
 
 .card__description {

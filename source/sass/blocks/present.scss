@@ -1,7 +1,6 @@
 @use "../variables.scss";
 
 .present {
-  min-height: 289px;
   color: variables.$color-title-second;
   background-color: variables.$color-background;
   background-image: url("../../img/background/catbag-mobile.jpg");
@@ -14,4 +13,5 @@
 
 .present__description {
   padding-top: 186px;
+  margin: 0;
 }

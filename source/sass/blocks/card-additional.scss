@@ -8,3 +8,24 @@
   text-transform: uppercase;
   margin: 0;
 }
+
+.card-additional__block {
+  display: flex;
+  justify-content: space-between;
+  line-height: 14px;
+  color: variables.$color-text;
+  padding: 13px 0 15px;
+}
+
+.card-additional__button {
+  display: block;
+  padding: 10px;
+}
+
+.card-additional__quantity {
+  margin: 0;
+}
+
+.card-additional__price {
+  margin: 0;
+}
