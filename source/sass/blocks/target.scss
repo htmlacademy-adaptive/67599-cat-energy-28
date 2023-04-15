@@ -4,6 +4,10 @@
   padding: 20px;
 }
 
+.target__item {
+  width: 280px;
+}
+
 .target__item:not(:last-child) {
   margin-bottom: 20px;
 }

@@ -7,14 +7,16 @@
 }
 
 .form__button {
-  box-sizing: border-box;
-  padding: 10px 78px;
-  font-size: 16px;
-  line-height: 20px;
-  border: none;
-  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 21px;
 }
 
 .form__field {
   padding: 0;
+}
+
+.form__remark {
+  margin: 0;
 }
