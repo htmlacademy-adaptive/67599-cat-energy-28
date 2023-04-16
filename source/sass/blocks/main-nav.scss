@@ -9,9 +9,85 @@
   text-transform: uppercase;
 }
 
+.main-nav__list {
+  display: none;
+  background-color: transparent;
+
+  &--open {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    background-color: variables.$color-title-second;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    position: relative;
+    display: block;
+  }
+}
+
 .main-nav__toggle {
+  display: block;
   position: absolute;
-  top: -20px;
-  right: 0;
+  top: -40px;
+  right: 20px;
+  height: 1.5px;
+  width: 24px;
+  background-color: variables.$color-title;
+  border: none;
   cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    right: 0;
+    height: 1.5px;
+    width: 24px;
+    background-color: variables.$color-title;
+    border: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    height: 1.5px;
+    width: 24px;
+    background-color: variables.$color-title;
+    border: none;
+  }
+
+  &--close {
+    display: block;
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    height: 1.5px;
+    width: 24px;
+    background-color: variables.$color-title;
+    border: none;
+    transform: rotate(45deg);
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 1.5px;
+      width: 24px;
+      background-color: variables.$color-title;
+      border: none;
+      transform: rotate(90deg);
+    }
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
 }

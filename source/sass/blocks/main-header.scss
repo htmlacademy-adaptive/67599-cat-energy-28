@@ -1,7 +1,26 @@
 @use "../variables.scss";
 
 .main-header {
-  padding: 10px 20px 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: variables.$tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 53px;
+  }
+}
+
+.main-header__logo {
+  border-bottom: 1px solid variables.$color-border-second;
+
+  @media (min-width: variables.$tablet-width) {
+    border: none;
+  }
 }
 
 .main-header__block {
