@@ -3,6 +3,24 @@
 
 .slider__list {
   @include mixins.list-style;
+  position: relative;
+  text-align: center;
+  height: 260px;
+
+  @media (min-width: variables.$tablet-width) {
+    bottom: 150px;
+  }
+}
+
+.slider__item {
+  &--after {
+    position: relative;
+    bottom: 260px;
+
+    @media (min-width: variables.$tablet-width) {
+      bottom: 520px;
+    }
+  }
 }
 
 .slider__swiper {
@@ -16,4 +34,34 @@
   border: 2px solid variables.$color-border;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.slider__before {
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: variables.$tablet-width) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.slider__after {
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: variables.$tablet-width) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
 }

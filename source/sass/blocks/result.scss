@@ -6,8 +6,24 @@
   gap: 32px;
 }
 
-.result__block {
+.result__border {
+  width: 124px;
+  border: 1px solid variables.$color-border-fifth;
+  border-radius: 3px;
   text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 162px;
+  }
+}
+
+.result__block {
+  position: relative;
+  top: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    top: 7px;
+  }
 }
 
 .result__value {
@@ -17,12 +33,29 @@
   line-height: 24px;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .result__annotation {
+  display: inline-block;
+  width: 60px;
   color: variables.$color-text;
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;
   margin: 0;
+  padding: 0 15px;
+  background-color: variables.$color-background-third;
+
+  @media (min-width: variables.$tablet-width) {
+    display: inline;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: variables.$color-title-second;
+  }
 }

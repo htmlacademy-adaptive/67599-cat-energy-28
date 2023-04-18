@@ -2,7 +2,6 @@
 
 .promo {
   position: relative;
-  min-height: 600px;
   padding: 27px 20px;
   color: variables.$color-title-second;
   background-image: url("../img/background/promo-mobile.jpg");
@@ -20,6 +19,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
+    min-height: 560px;
     padding-top: 111px;
   }
 

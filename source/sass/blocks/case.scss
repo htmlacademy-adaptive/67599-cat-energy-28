@@ -1,24 +1,56 @@
 @use "../variables.scss";
 
+.case {
+  padding: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    background-color: variables.$color-title-second;
+    padding-bottom: 250px;
+  }
+}
+
+
 .case__title {
   font-family: variables.$font-title;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: variables.$color-title;
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 40px 0;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .case__description {
   color: variables.$color-text;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+}
+
+.case__wrapper {
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .case__result {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .case__total {
@@ -29,4 +61,12 @@
   text-align: center;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 9px;
+    font-size: 20px;
+  }
 }
