@@ -7,7 +7,3 @@ buttonMenu.addEventListener('click', function() {
   buttonMenu.classList.toggle('main-nav__toggle');
   buttonMenu.classList.toggle('main-nav__toggle--close');
 });
-
-
-
-

@@ -14,7 +14,8 @@
     <div class="page__container main-header">
       <a class="main-header__logo logo">
         <img class="logo__image" src="./img/logo-mobile.svg" width="33" height="37" alt="Товарный знак «Кэт энерджи».">
-        <img class="logo__text" src="./img/logo-sign-mobile.svg" width="101" height="18" alt="Логотип «Кэт энерджи».">
+        <img class="logo__text logo__text--header" src="./img/logo-sign-mobile.svg" width="101" height="18"
+          alt="Логотип «Кэт энерджи».">
 
         <img class="logo__tablet" src="./img/logo-tablet.svg" width="174" height="52" alt="Логотип «Кэт энерджи».">
       </a>
@@ -102,8 +103,8 @@
     </section>
 
     <section class="main__section example">
-      <div class="example__case case">
-        <div class="page__container">
+      <div class="page__container example__case">
+        <div class="case">
           <h2 class="case__title">Живой пример</h2>
           <p class="case__description">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат
@@ -112,67 +113,74 @@
           </p>
 
           <div class="case__wrapper">
-            <dl class="case__result result">
-              <div class="result__border">
+            <ul class="case__result result">
+              <li class="result__border">
                 <div class="result__block">
-                  <dt class="result__value">5 кг</dt>
-                  <dd class="result__annotation">Снижение веса</dd>
+                  <p class="result__value">5 кг</p>
+                  <p class="result__annotation">Снижение веса</p>
                 </div>
-              </div>
+              </li>
 
-              <div class="result__border">
+              <li class="result__border">
                 <div class="result__block">
-                  <dt class="result__value">60 дней</dt>
-                  <dd class="result__annotation">Затрачено времени</dd>
+                  <p class="result__value">60 дней</p>
+                  <p class="result__annotation">Затрачено времени</p>
                 </div>
-              </div>
-
-            </dl>
+              </li>
+            </ul>
             <p class="case__total">
               <span>Затраты на питание:</span>
-              <span>15 000 руб.</span></p>
+              <span>15 000 руб.</span>
+            </p>
           </div>
+        </div>
 
+        <div class="example__slider slider">
+          <h2 class="visually-hidden">Такие разные коты.</h2>
+          <ul class="slider__list">
+            <li class="slider__item">
+              <img class="slider__before" width="280" height="256" src="./img/before-mobile.png" alt="Худой кот.">
+              <img class="slider__before slider__before--tablet" width="560" height="512" src="./img/before-tablet.png"
+                alt="Худой кот.">
+            </li>
+            <li class="slider__item slider__item--after">
+              <img class="slider__after" width="280" height="256" src="./img/after-mobile.png" alt="Толстый кот.">
+              <img class="slider__after slider__after--tablet" width="560" height="512" src="./img/after-tablet.png"
+                alt="Толстый кот.">
+            </li>
+          </ul>
+
+          <div class="slider__swiper">
+            <button class="slider__button" type="button"><span class="visually-hidden">До.</span></button>
+            <button class="slider__button" type="button"><span class="visually-hidden">После.</span></button>
+          </div>
         </div>
       </div>
 
-
-      <div class="example__slider slider">
-        <h2 class="visually-hidden">Такие разные коты.</h2>
-        <ul class="slider__list">
-          <li class="slider__item">
-            <img class="slider__before" width="280" height="256" src="./img/before-mobile.png" alt="Худой кот.">
-            <img class="slider__before--tablet" width="560" height="512" src="./img/before-tablet.png" alt="Худой кот.">
-          </li>
-          <li class="slider__item slider__item--after">
-            <img class="slider__after" width="280" height="256" src="./img/after-mobile.png" alt="Толстый кот.">
-            <img class="slider__after--tablet" width="560" height="512" src="./img/after-tablet.png" alt="Толстый кот.">
-          </li>
-        </ul>
-
-        <div class="slider__swiper">
-          <button class="slider__button" type="button"><span class="visually-hidden">До.</span></button>
-          <button class="slider__button" type="button"><span class="visually-hidden">После.</span></button>
-        </div>
-      </div>
-      </div>
     </section>
   </main>
 
   <footer class="page__footer main-footer">
-    <div class="main-footer__wrapper"> <!-- В будущем обратить внимание на целесообразность обертки -->
-      <section class="main-footer__contacts contacts">
+    <section class="main-footer__contacts contacts">
+      <div class="page__container">
         <div class="contacts__data">
           <h2 class="visually-hidden">Контакты.</h2>
           <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__address">
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
+          </p>
         </div>
+      </div>
 
-        <img class="contacts__map" src="./img/map-mobile.png" width="320" height="362" alt="Карта расположения офиса.">
-      </section>
+      <img class="contacts__map" src="./img/map-mobile.png" width="320" height="362" alt="Карта расположения офиса.">
+    </section>
 
+
+    <div class="main-footer__wrapper page__container">
       <a class="main-footer__logo logo logo--footer">
-        <img class="logo__text" src="./img/logo-sign-mobile.svg" width="128" height="24" alt="Логотип «CAT ENERGY».">
+        <img class="logo__text logo__text--footer" src="./img/logo-sign-mobile.svg" width="128" height="24"
+          alt="Логотип «CAT ENERGY».">
       </a>
 
       <ul class="main-footer__social social">
@@ -205,6 +213,7 @@
         </a>
       </div>
     </div>
+
   </footer>
 
   <script src="./js/main.js"></script>

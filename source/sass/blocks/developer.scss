@@ -5,6 +5,11 @@
   background-color: variables.$color-background-second;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0;
+    gap: 27px;
+  }
 }
 
 .developer__link {

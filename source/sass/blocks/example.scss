@@ -9,3 +9,9 @@
     padding-bottom: 100px;
   }
 }
+
+.example__case {
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+  }
+}

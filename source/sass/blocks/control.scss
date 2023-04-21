@@ -7,4 +7,9 @@
   line-height: 18px;
   text-transform: uppercase;
   color: variables.$color-subtitle;
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

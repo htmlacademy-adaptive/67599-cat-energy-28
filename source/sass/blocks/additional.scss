@@ -3,6 +3,16 @@
 
 .additional {
   padding: 25px 0 0;
+  display: grid;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: 3fr 1fr;
+    gap: 80px;
+  }
 }
 
 .additional__present {
@@ -17,13 +27,67 @@
   color: variables.$color-title;
   margin: 0;
   margin-bottom: 36px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .additional__list {
   @include mixins.list-style;
   margin-bottom: 50px;
+
+  @media (min-width: variables.$tablet-width) {
+    border: 2px solid variables.$color-background-second;
+    border-radius: 3px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0;
+    border: none;
+    border-top: 2px solid variables.$color-background-second;
+    border-bottom: 2px solid variables.$color-background-second;
+  }
 }
 
 .additional__item {
   margin-bottom: 19px;
+
+  &:not(:last-child) {
+    @media (min-width: variables.$tablet-width) {
+      padding-bottom: 28px;
+      border-bottom: 2px solid variables.$color-background-second;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      padding: 0;
+      padding-bottom: 15px;
+    }
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 28px 38px 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0;
+  }
+}
+
+.additional__button {
+  margin-bottom: 19px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0;
+  }
 }

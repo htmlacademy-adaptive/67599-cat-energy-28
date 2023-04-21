@@ -3,9 +3,11 @@
 
 .logo {
   display: flex;
+  align-items: center;
   padding: 10px 20px 20px;
 
   &--footer {
+    padding-top: 40px;
     justify-content: center;
   }
 
@@ -23,8 +25,19 @@
 }
 
 .logo__text {
-  @media (min-width: variables.$tablet-width) {
-    display: none;
+  width: 101px;
+  height: 18px;
+
+  &--header {
+    @media (min-width: variables.$tablet-width) {
+      display: none;
+    }
+  }
+
+  &--footer {
+    @media (min-width: variables.$tablet-width) {
+      display: block;
+    }
   }
 }
 

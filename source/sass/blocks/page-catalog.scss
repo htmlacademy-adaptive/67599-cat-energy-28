@@ -2,6 +2,10 @@
 
 .page-catalog {
   padding: 27px 20px 35px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 65px;
+  }
 }
 
 .page-catalog__title {
@@ -12,4 +16,9 @@
   color: variables.$color-title;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

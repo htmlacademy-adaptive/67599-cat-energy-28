@@ -1,9 +1,12 @@
 @use "../variables.scss";
+@use "../mixins.scss";
 
 .result {
+  @include mixins.list-style;
   display: flex;
   justify-content: center;
   gap: 32px;
+  margin-bottom: 30px;
 }
 
 .result__border {
@@ -57,5 +60,9 @@
     font-size: 14px;
     line-height: 14px;
     background-color: variables.$color-title-second;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    background-color: variables.$color-background-third;
   }
 }

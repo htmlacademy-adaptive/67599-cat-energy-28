@@ -1,6 +1,30 @@
 @use "../variables.scss";
 
-.main-footer__logo {
-  padding: 40px 0 20px;
+.main-footer {
   background-color: variables.$color-background-second;
+}
+
+.main-footer__wrapper {
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+}
+
+.main-footer__logo {
+  border-bottom: 1px solid variables.$color-border-third;
+
+  @media (min-width: variables.$tablet-width) {
+    border: none;
+  }
+}
+
+.main-footer__social {
+  border-bottom: 1px solid variables.$color-border-third;
+
+  @media (min-width: variables.$tablet-width) {
+    border: none;
+  }
 }
