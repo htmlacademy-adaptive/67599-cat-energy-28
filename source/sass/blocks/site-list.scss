@@ -18,7 +18,7 @@
   }
 }
 
-.site-list__item:not(:last-child) {
+.site-list__item {
   text-decoration: none;
   border-bottom: 1px solid variables.$color-border-second;
 
@@ -40,7 +40,9 @@
   }
 
   &--index-active {
-    border-bottom: 2px solid variables.$color-background;
+    @media (min-width: variables.$tablet-width) {
+      border-bottom: 2px solid variables.$color-background;
+    }
 
     @media (min-width: variables.$desktop-width) {
       border-bottom: 2px solid variables.$color-title-second;
@@ -48,7 +50,9 @@
   }
 
   &--active {
-    border-bottom: 2px solid variables.$color-background;
+    @media (min-width: variables.$tablet-width) {
+      border-bottom: 2px solid variables.$color-background;
+    }
   }
 
   @media (min-width: variables.$tablet-width) {

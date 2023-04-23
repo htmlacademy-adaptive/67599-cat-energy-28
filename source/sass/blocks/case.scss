@@ -9,7 +9,6 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 50%;
     background-color: variables.$color-background-third;
     padding-bottom: 75px;
   }
@@ -22,7 +21,8 @@
   font-size: 36px;
   line-height: 40px;
   color: variables.$color-title;
-  margin: 40px 0;
+  margin: 0;
+  margin-bottom: 40px;
 
   @media (min-width: variables.$tablet-width) {
     font-size: 60px;
@@ -67,7 +67,6 @@
 
 .case__result {
   margin: 0;
-  margin-bottom: 40px;
 
   @media (min-width: variables.$tablet-width) {
     margin-bottom: 0;

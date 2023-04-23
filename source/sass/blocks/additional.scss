@@ -3,13 +3,13 @@
 
 .additional {
   padding: 25px 0 0;
-  display: grid;
 
   @media (min-width: variables.$tablet-width) {
     padding-top: 60px;
   }
 
   @media (min-width: variables.$desktop-width) {
+    display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 80px;
   }
@@ -76,11 +76,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 0;
-  }
-
-  @media (min-width: variables.$desktop-width) {
     margin: 0;
+    padding: 0;
   }
 }
 

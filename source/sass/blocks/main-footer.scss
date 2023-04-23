@@ -5,6 +5,8 @@
 }
 
 .main-footer__wrapper {
+  padding: 0 20px;
+
   @media (min-width: variables.$tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -22,6 +24,8 @@
 }
 
 .main-footer__social {
+  display: block;
+  margin: 0 auto;
   border-bottom: 1px solid variables.$color-border-third;
 
   @media (min-width: variables.$tablet-width) {

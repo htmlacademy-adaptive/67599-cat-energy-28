@@ -3,9 +3,9 @@
 
 .products__list {
   @include mixins.list-style;
-  display: grid;
 
   @media (min-width: variables.$tablet-width) {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(429px, auto);
     gap: 60px;

@@ -2,31 +2,7 @@
 @use "../mixins.scss";
 
 .field-group {
-  border: none;
   padding: 0 20px;
-
-  &--target {
-    border: 2px solid variables.$color-background-second;
-    border-radius: 3px;
-  }
-
-  &--contacts {
-    @media (min-width: variables.$desktop-width) {
-      grid-column: 1 / 3;
-    }
-  }
-
-  &--about {
-    @media (min-width: variables.$desktop-width) {
-      grid-column: 1 / 3;
-    }
-  }
-
-  &--additional {
-    @media (min-width: variables.$desktop-width) {
-      grid-column: 1 / 3;
-    }
-  }
 }
 
 .field-group__list {

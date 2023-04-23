@@ -74,27 +74,13 @@
 }
 
 .promo__image {
-  @media (min-width: variables.$tablet-width) {
-    display: none;
-  }
-}
-
-.promo__image-tablet {
-  display: none;
+  width: 280px;
+  height: 270px;
 
   @media (min-width: variables.$tablet-width) {
-    display: block;
     width: 709px;
     height: 609px;
   }
-
-  @media (min-width: variables.$desktop-width) {
-    display: none;
-  }
-}
-
-.promo__image-desktop {
-  display: none;
 
   @media (min-width: variables.$desktop-width) {
     position: absolute;
@@ -113,6 +99,7 @@
   box-sizing: border-box;
 
   @media (min-width: variables.$tablet-width) {
+    width: 244px;
     position: absolute;
     top: 230px;
     left: 90px;

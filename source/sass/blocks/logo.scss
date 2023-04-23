@@ -18,35 +18,15 @@
 
 .logo__image {
   margin-right: 56px;
-
-  @media (min-width: variables.$tablet-width) {
-    display: none;
-  }
 }
 
 .logo__text {
   width: 101px;
   height: 18px;
 
-  &--header {
-    @media (min-width: variables.$tablet-width) {
-      display: none;
-    }
-  }
-
   &--footer {
     @media (min-width: variables.$tablet-width) {
       display: block;
     }
-  }
-}
-
-.logo__tablet {
-  display: none;
-
-  @media (min-width: variables.$tablet-width) {
-    display: block;
-    width: 174px;
-    height: 52px;
   }
 }

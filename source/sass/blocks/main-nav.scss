@@ -21,6 +21,10 @@
     z-index: 1;
     display: block;
     background-color: variables.$color-title-second;
+
+    @media (min-width: variables.$desktop-width) {
+      background-color: transparent;
+    }
   }
 
   @media (min-width: variables.$tablet-width) {
@@ -29,7 +33,7 @@
   }
 }
 
-.main-nav__toggle {
+.main-nav__open {
   display: block;
   position: absolute;
   top: -40px;
@@ -62,29 +66,33 @@
     border: none;
   }
 
-  &--close {
-    display: block;
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__close {
+  display: block;
+  position: absolute;
+  top: -40px;
+  right: 20px;
+  height: 1.5px;
+  width: 24px;
+  background-color: variables.$color-title;
+  border: none;
+  transform: rotate(45deg);
+  cursor: pointer;
+
+  &::after {
+    content: "";
     position: absolute;
-    top: -40px;
-    right: 20px;
+    top: 0;
+    right: 0;
     height: 1.5px;
     width: 24px;
     background-color: variables.$color-title;
     border: none;
-    transform: rotate(45deg);
-    cursor: pointer;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 1.5px;
-      width: 24px;
-      background-color: variables.$color-title;
-      border: none;
-      transform: rotate(90deg);
-    }
+    transform: rotate(90deg);
   }
 
   @media (min-width: variables.$tablet-width) {
