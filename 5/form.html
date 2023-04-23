@@ -16,16 +16,13 @@
       <a class="main-header__logo logo" href="./index.html">
         <img class="logo__image" src="./img/logo-mobile.svg" width="33" height="37" alt="Товарный знак «Кэт энерджи».">
         <img class="logo__text logo__text--header" src="./img/logo-sign-mobile.svg" width="101" height="18" alt="Логотип «Кэт энерджи».">
-
-        <img class="logo__tablet" src="./img/logo-tablet.svg" width="174" height="52" alt="Логотип «Кэт энерджи».">
       </a>
 
       <nav class="main-nav">
-        <div class="main-nav__wrapper"> <!-- В будущем обратить внимание на целесообразность обертки -->
-          <button class="main-nav__toggle" type="button">
+          <button class="main-nav__close" type="button">
             <span class="visually-hidden">Открыть меню.</span>
           </button>
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list main-nav__list--open site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
@@ -36,7 +33,6 @@
               <a class="site-list__link  site-list__link--active">Подбор программы</a>
             </li>
           </ul>
-        </div>
       </nav>
     </div>
   </header>
@@ -52,7 +48,7 @@
 
         <form class="form-group__area form" action="https://echo.htmlacademy.ru/" method="post">
 
-          <fieldset class="form__field field-group">
+          <fieldset class="form__field form__field--about field-group">
             <legend class="visually-hidden">Про кота</legend>
 
             <ul class="field-group__list">
@@ -76,7 +72,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__field field-group field-group--target">
+          <fieldset class="form__field form__field--target field-group">
             <legend class="visually-hidden">Цель программы</legend>
 
             <ul class="field-group__list">
@@ -101,7 +97,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__field field-group field-group--contacts">
+          <fieldset class="form__field field-group">
             <legend class="field-group__title">Контактные данные (владельца кота)</legend>
 
             <ul class="field-group__list field-group__list--contacts">
@@ -119,7 +115,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__field field-group  field-group--about">
+          <fieldset class="form__field field-group">
             <legend class="field-group__title">Комментарий</legend>
             <label class="field-group__description">
               <textarea class="field-group__input field-group__input--textarea"
@@ -127,7 +123,7 @@
             </label>
           </fieldset>
 
-          <fieldset class="form__field field-group field-group--additional">
+          <fieldset class="form__field field-group">
             <legend class="field-group__title">Дополнительно</legend>
 
             <ul class="field-group__list field-group__list--additional">
@@ -171,7 +167,7 @@
   </main>
 
   <footer class="page__footer main-footer">
-    <section class="main-footer__contacts contacts contacts--second">
+    <section class="main-footer__contacts contacts contacts--inner">
       <div class="page__container">
         <div class="contacts__data">
           <h2 class="visually-hidden">Контакты.</h2>
