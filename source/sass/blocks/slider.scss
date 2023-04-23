@@ -1,12 +1,50 @@
 @use "../variables.scss";
 @use "../mixins.scss";
 
+.slider {
+  padding-bottom: 100px;
+
+  @media (min-width: variables.$desktop-width) {
+    background-color: variables.$color-background-third;
+  }
+}
+
 .slider__list {
   @include mixins.list-style;
+  position: relative;
+  text-align: center;
+  height: 260px;
+
+  @media (min-width: variables.$tablet-width) {
+    bottom: 150px;
+  }
+}
+
+.slider__item {
+  &--after {
+    position: relative;
+    bottom: 260px;
+
+    @media (min-width: variables.$tablet-width) {
+      bottom: 520px;
+    }
+  }
 }
 
 .slider__swiper {
   text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    position: absolute;
+    bottom: 10px;
+    right: 300px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    position: absolute;
+    bottom: 70px;
+    right: 235px;
+  }
 }
 
 .slider__button {
@@ -16,4 +54,34 @@
   border: 2px solid variables.$color-border;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.slider__before {
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: variables.$tablet-width) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.slider__after {
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: variables.$tablet-width) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
 }

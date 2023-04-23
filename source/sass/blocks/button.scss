@@ -22,5 +22,11 @@
   &--choose {
     font-size: 14px;
     line-height: 18px;
+
+    @media (min-width: variables.$tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 17px 10px;
+    }
   }
 }

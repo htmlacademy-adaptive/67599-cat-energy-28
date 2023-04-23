@@ -1,5 +1,20 @@
 @use "../variables.scss";
 
+.case {
+  padding: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    background-color: variables.$color-title-second;
+    padding-bottom: 250px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    background-color: variables.$color-background-third;
+    padding-bottom: 75px;
+  }
+}
+
+
 .case__title {
   font-family: variables.$font-title;
   font-weight: 400;
@@ -8,17 +23,54 @@
   color: variables.$color-title;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    position: relative;
+    top: -180px;
+  }
 }
 
 .case__description {
   color: variables.$color-text;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 436px;
+  }
+}
+
+.case__wrapper {
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+  }
 }
 
 .case__result {
   margin: 0;
-  margin-bottom: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .case__total {
@@ -29,4 +81,17 @@
   text-align: center;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 9px;
+    font-size: 20px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    flex-direction: row;
+    gap: 50px;
+  }
 }

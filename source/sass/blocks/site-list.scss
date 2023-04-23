@@ -3,10 +3,28 @@
 
 .site-list {
   @include mixins.list-style;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    gap: 34px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .site-list__item {
   text-decoration: none;
+  border-bottom: 1px solid variables.$color-border-second;
+
+  @media (min-width: variables.$tablet-width) {
+    border: none;
+  }
 }
 
 .site-list__link {
@@ -14,4 +32,30 @@
   text-decoration: none;
   color: variables.$color-title;
   padding: 22px 0;
+
+  &--index {
+    @media (min-width: variables.$desktop-width) {
+      color: variables.$color-title-second;
+    }
+  }
+
+  &--index-active {
+    @media (min-width: variables.$tablet-width) {
+      border-bottom: 2px solid variables.$color-background;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      border-bottom: 2px solid variables.$color-title-second;
+    }
+  }
+
+  &--active {
+    @media (min-width: variables.$tablet-width) {
+      border-bottom: 2px solid variables.$color-background;
+    }
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 10px 0;
+  }
 }

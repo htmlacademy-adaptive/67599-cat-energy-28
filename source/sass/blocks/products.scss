@@ -3,4 +3,25 @@
 
 .products__list {
   @include mixins.list-style;
+
+  @media (min-width: variables.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(429px, auto);
+    gap: 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(511px, auto);
+    gap: 80px;
+  }
+}
+
+.products__item {
+  @media (min-width: variables.$tablet-width) {
+    border: 2px solid variables.$color-background-second;
+    border-radius: 3px;
+    background-color: variables.$color-background-second;
+  }
 }

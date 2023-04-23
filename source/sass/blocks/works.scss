@@ -3,6 +3,14 @@
 
 .works {
   padding: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 20px 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 70px 0 200px;
+  }
 }
 
 .works__title {
@@ -13,13 +21,40 @@
   color: variables.$color-title;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .works__list {
   @include mixins.list-style;
   color: variables.$color-text;
+
+  @media (min-width: variables.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 37px;
+    column-gap: 137px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 94px;
+  }
 }
 
 .works__item {
   margin-bottom: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 230px;
+  }
 }

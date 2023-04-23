@@ -1,12 +1,42 @@
 @use "../variables.scss";
 
 .promo {
+  position: relative;
   padding: 27px 20px;
   color: variables.$color-title-second;
   background-image: url("../img/background/promo-mobile.jpg");
+  background-size: 100% auto;
   background-position: top;
   background-repeat: no-repeat;
   text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    background-image: none;
+    color: variables.$color-title;
+    padding: 0;
+    padding-top: 64px;
+    text-align: left;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    min-height: 560px;
+    padding-top: 111px;
+  }
+
+  &::before {
+    @media (min-width: variables.$desktop-width) {
+      content: "";
+      position: absolute;
+      min-width: 720px;
+      width: 50%;
+      height: 694px;
+      right: 0;
+      top: -105px;
+      z-index: -1;
+      background-image: url("../img/background/promo.jpg");
+      background-size: 100% auto;
+    }
+  }
 }
 
 .promo__title {
@@ -16,6 +46,14 @@
   line-height: 36px;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 420px;
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 90px;
+    margin-bottom: 40px;
+  }
 }
 
 .promo__text {
@@ -26,9 +64,44 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 90px;
+    margin-bottom: 20px;
+  }
+}
+
+.promo__image {
+  width: 280px;
+  height: 270px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    position: absolute;
+    top: -80px;
+    left: 450px;
+    display: block;
+    width: 552px;
+    height: 499px;
+    margin: 0 auto;
+  }
 }
 
 .promo__button {
   display: block;
   padding: 7px;
+  box-sizing: border-box;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 244px;
+    position: absolute;
+    top: 230px;
+    left: 90px;
+  }
 }

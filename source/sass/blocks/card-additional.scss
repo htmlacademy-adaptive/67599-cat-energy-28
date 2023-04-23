@@ -1,5 +1,14 @@
 @use "../variables.scss";
 
+.card-additional {
+  @media (min-width: variables.$desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    align-items: center;
+  }
+}
+
 .card-additional__title {
   font-family: variables.$font-title;
   font-weight: 400;

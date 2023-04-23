@@ -1,5 +1,13 @@
 @use "../variables.scss";
 
+.target {
+  padding: 0 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0;
+  }
+}
+
 .target-card {
   box-sizing: border-box;
   padding: 30px 20px 18px;
@@ -15,15 +23,38 @@
   margin: 0;
   margin-bottom: 29px;
   text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    text-align: center;
+  }
 }
 
 .target-card__description {
   color: variables.$color-text;
   margin: 0;
-  margin-bottom: 38px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid variables.$color-border-third;
+
+  @media (min-width: variables.$tablet-width) {
+    border-bottom: none;
+    width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 457px;
+  }
 }
 
 .target-card__link {
+  display: block;
   font-family: variables.$font-title;
   font-weight: 400;
   font-size: 16px;
@@ -31,4 +62,5 @@
   text-transform: uppercase;
   color: variables.$color-title;
   text-decoration: none;
+  margin-top: 19px;
 }
