@@ -15,6 +15,7 @@
 }
 
 .target-card__title {
+  position: relative;
   font-family: variables.$font-title;
   font-weight: 400;
   font-size: 24px;
@@ -22,7 +23,39 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
-  text-align: center;
+  padding-left: 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: variables.$color-background;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 5px;
+    width: 36px;
+    height: 50px;
+    background-image: url("../../img/cat-slim.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--pro {
+    &::after {
+      top: 5px;
+      left: -10px;
+      width: 68px;
+      height: 28px;
+      background-image: url("../../img/cat-pro.svg");
+    }
+  }
 
   @media (min-width: variables.$tablet-width) {
     font-size: 36px;
@@ -54,6 +87,7 @@
 }
 
 .target-card__link {
+  position: relative;
   display: block;
   font-family: variables.$font-title;
   font-weight: 400;
@@ -63,4 +97,15 @@
   color: variables.$color-title;
   text-decoration: none;
   margin-top: 19px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 100px;
+    width: 24px;
+    height: 12px;
+    background-image: url("../../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+  }
 }
