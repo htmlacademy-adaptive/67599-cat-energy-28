@@ -12,6 +12,14 @@
   box-sizing: border-box;
   padding: 30px 20px 18px;
   background-color: variables.$color-background-second;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 70px;
+  }
 }
 
 .target-card__title {
@@ -34,6 +42,20 @@
     height: 50px;
     border-radius: 50%;
     background-color: variables.$color-background;
+
+    @media (min-width: variables.$tablet-width) {
+      top: 0;
+      left: 400px;
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      top: -35px;
+      left: 0;
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &::after {
@@ -45,6 +67,22 @@
     height: 50px;
     background-image: url("../../img/cat-slim.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: variables.$tablet-width) {
+      top: 0;
+      left: 435px;
+      width: 140px;
+      height: 194px;
+      background-size: 140px 194px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      top: -40px;
+      left: 15px;
+      width: 70px;
+      height: 97px;
+      background-size: 70px 97px;
+    }
   }
 
   &--pro {
@@ -54,6 +92,22 @@
       width: 68px;
       height: 28px;
       background-image: url("../../img/cat-pro.svg");
+
+      @media (min-width: variables.$tablet-width) {
+        top: 52px;
+        left: 370px;
+        width: 268px;
+        height: 112px;
+        background-size: 268px 112px;
+      }
+
+      @media (min-width: variables.$desktop-width) {
+        top: -15px;
+        left: -20px;
+        width: 134px;
+        height: 56px;
+        background-size: 134px 56px;
+      }
     }
   }
 
@@ -65,6 +119,7 @@
 
   @media (min-width: variables.$desktop-width) {
     text-align: center;
+    margin-bottom: 60px;
   }
 }
 

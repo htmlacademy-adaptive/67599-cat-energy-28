@@ -18,6 +18,11 @@
   @media (min-width: variables.$tablet-width) {
     bottom: 150px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    bottom: 150px;
+    right: 0;
+  }
 }
 
 .slider__item {

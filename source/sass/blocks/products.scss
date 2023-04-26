@@ -19,6 +19,8 @@
 }
 
 .products__item {
+  border-bottom: 1px solid #ebebeb;
+
   @media (min-width: variables.$tablet-width) {
     border: 2px solid variables.$color-background-second;
     border-radius: 3px;

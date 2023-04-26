@@ -25,6 +25,7 @@
   @media (min-width: variables.$tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 180px;
   }
 }
 
@@ -61,32 +62,91 @@
     background-color: variables.$color-background;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: variables.$tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: -120px;
+    }
   }
 
-  &--nutricion::before {
-    background-image: url("../../img/icon-leaf.svg");
-    background-size: 34px 28px;
+  &::after {
+    @media (min-width: variables.$tablet-width) {
+      content: "";
+      position: absolute;
+      top: -165px;
+      right: 20px;
+      z-index: -1;
+      font-family: variables.$font-title;
+      font-style: normal;
+      font-size: 280px;
+      line-height: 280px;
+      color: variables.$color-background-second;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      right: 5px;
+    }
   }
 
-  &--release::before {
-    background-image: url("../../img/icon-powder.svg");
-    background-size: 25px 28px;
+  &--nutricion {
+    &::before {
+      background-image: url("../../img/icon-leaf.svg");
+      background-size: 34px 28px;
+    }
+
+    &::after {
+      @media (min-width: variables.$tablet-width) {
+        content: "1";
+      }
+    }
   }
 
-  &--mode::before {
-    background-image: url("../../img/icon-eat.svg");
-    background-size: 25px 30px;
+  &--release {
+    &::before {
+      background-image: url("../../img/icon-powder.svg");
+      background-size: 25px 28px;
+    }
+
+    &::after {
+      @media (min-width: variables.$tablet-width) {
+        content: "2";
+      }
+    }
   }
 
-  &--change::before {
-    background-image: url("../../img/icon-time.svg");
-    background-size: 26px 31px;
+  &--mode {
+    &::before {
+      background-image: url("../../img/icon-eat.svg");
+      background-size: 25px 30px;
+    }
+
+    &::after {
+      @media (min-width: variables.$tablet-width) {
+        content: "3";
+      }
+    }
+  }
+
+  &--change {
+    &::before {
+      background-image: url("../../img/icon-time.svg");
+      background-size: 26px 31px;
+    }
+
+    &::after {
+      @media (min-width: variables.$tablet-width) {
+        content: "4";
+      }
+    }
   }
 
   @media (min-width: variables.$tablet-width) {
     width: 245px;
     font-size: 16px;
     line-height: 24px;
+    padding-left: 0;
+    margin-bottom: 180px;
   }
 
   @media (min-width: variables.$desktop-width) {
