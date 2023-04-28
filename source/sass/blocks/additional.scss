@@ -2,7 +2,23 @@
 @use "../mixins.scss";
 
 .additional {
+  position: relative;
   padding: 25px 0 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 265px;
+    right: 0;
+    top: 40px;
+    background-color: variables.$color-background;
+
+    @media (min-width: variables.$tablet-width) {
+      left: 0;
+      top: 80px;
+    }
+  }
 
   @media (min-width: variables.$tablet-width) {
     padding-top: 60px;
@@ -27,8 +43,11 @@
   color: variables.$color-title;
   margin: 0;
   margin-bottom: 36px;
+  padding: 0 20px;
 
   @media (min-width: variables.$tablet-width) {
+    width: 345px;
+    background-color: variables.$color-title-second;
     font-size: 36px;
     line-height: 36px;
   }

@@ -1,7 +1,7 @@
 @use "../variables.scss";
 
 .page-catalog {
-  padding: 27px 20px 35px;
+  padding: 27px 0 35px;
 
   @media (min-width: variables.$tablet-width) {
     padding-top: 65px;
@@ -14,11 +14,13 @@
   font-size: 36px;
   line-height: 36px;
   color: variables.$color-title;
+  padding: 0 20px;
   margin: 0;
   margin-bottom: 40px;
 
   @media (min-width: variables.$tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 160px;
   }
 }
