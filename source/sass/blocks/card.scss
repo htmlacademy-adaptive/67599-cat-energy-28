@@ -78,6 +78,10 @@
     grid-column: 1;
     grid-row: 3 / 4;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 180px;
+  }
 }
 
 .card__block {
@@ -116,5 +120,9 @@
     padding: 10px;
     grid-column: 1;
     grid-row: 4 / 5;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 168px;
   }
 }

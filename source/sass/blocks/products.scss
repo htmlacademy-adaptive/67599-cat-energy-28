@@ -13,13 +13,13 @@
 
   @media (min-width: variables.$desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(511px, auto);
+    grid-auto-rows: minmax(431px, auto);
     gap: 80px;
   }
 }
 
 .products__item {
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid variables.$color-border-eighth;
 
   @media (min-width: variables.$tablet-width) {
     border: 2px solid variables.$color-background-second;

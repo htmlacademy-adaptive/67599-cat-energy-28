@@ -54,6 +54,10 @@
     margin-top: auto;
     width: 248px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 168px;
+  }
 }
 
 .show-more__plus {

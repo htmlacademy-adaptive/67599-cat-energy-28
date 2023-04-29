@@ -4,8 +4,8 @@
   position: relative;
   padding: 27px 20px;
   color: variables.$color-title-second;
-  background-image: url("../img/background/promo-mobile.jpg");
-  background-size: 100% auto;
+  background-image: url("../img/background/promo-mobile.jpg"), linear-gradient(variables.$color-background, variables.$color-background);
+  background-size: auto 302px;
   background-position: top;
   background-repeat: no-repeat;
   text-align: center;

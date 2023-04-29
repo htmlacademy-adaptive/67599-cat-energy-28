@@ -5,13 +5,32 @@
   background-color: variables.$color-background;
   background-image: url("../../img/background/catbag-mobile.jpg");
   background-position: center;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   font-size: 16px;
   text-align: center;
   line-height: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
 }
 
 .present__description {
   padding-top: 186px;
   margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0;
+    text-align: left;
+    margin-right: 124px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 150px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
