@@ -56,8 +56,9 @@
   }
 
   &--target {
-    border: 2px solid variables.$color-background-second;
-    border-radius: 3px;
+    border-top: 2px solid variables.$color-background-second;
+    border-bottom: 2px solid variables.$color-background-second;
+    padding: 20px 0;
 
     @media (min-width: variables.$desktop-width) {
       grid-column: 2 / 3;

@@ -1,15 +1,38 @@
 @use "../variables.scss";
 
 .control {
+  position: relative;
   font-family: variables.$font-title;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: variables.$color-subtitle;
+  padding-left: 40px;
+
+  &--radio {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid variables.$color-control;
+    border-radius: 50%;
+  }
 
   @media (min-width: variables.$desktop-width) {
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.control__input[type="radio"]:checked + .control--radio::before {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 18px;
+  height: 18px;
+  background-color: variables.$color-background;
+  border-radius: 50%;
+  content: "";
 }

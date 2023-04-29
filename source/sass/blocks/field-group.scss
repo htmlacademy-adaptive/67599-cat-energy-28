@@ -2,12 +2,12 @@
 @use "../mixins.scss";
 
 .field-group {
-  padding: 0 20px;
+  padding: 20px;
 }
 
 .field-group__list {
   @include mixins.list-style;
-  margin-bottom: 45px;
+  // margin-bottom: 45px;
   display: grid;
 
   &--contacts {
@@ -35,7 +35,7 @@
 .field-group__item {
   display: flex;
   align-items: center;
-  margin-bottom: 14px;
+  margin-bottom: 25px;
 
   @media (min-width: variables.$desktop-width) {
     margin-bottom: 20px;
