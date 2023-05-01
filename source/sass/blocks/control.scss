@@ -8,7 +8,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: variables.$color-subtitle;
-  padding-left: 40px;
+  padding-left: 46px;
 
   &--radio {
     position: absolute;
@@ -18,9 +18,30 @@
     height: 30px;
     border: 1px solid variables.$color-control;
     border-radius: 50%;
+
+    @media (min-width: variables.$tablet-width) {
+      top: -6px;
+      left: 27px;
+      width: 40px;
+      height: 40px;
+    }
   }
 
-  @media (min-width: variables.$desktop-width) {
+  &--checkbox {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid variables.$color-control;
+
+    @media (min-width: variables.$tablet-width) {
+      top: 0;
+    }
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding-left: 83px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -28,11 +49,28 @@
 
 .control__input[type="radio"]:checked + .control--radio::before {
   position: absolute;
-  top: 6px;
-  left: 6px;
-  width: 18px;
-  height: 18px;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 13px;
+  height: 13px;
   background-color: variables.$color-background;
   border-radius: 50%;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.control__input[type="checkbox"]:checked + .control--checkbox::before {
+  position: absolute;
   content: "";
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("./../img/icon-tick.svg");
+  background-size: 30px 30px;
 }

@@ -14,39 +14,42 @@
     <div class="page__container main-header">
       <a class="main-header__logo logo" href="./index.html">
         <img class="logo__image" src="./img/logo-mobile.svg" width="33" height="37" alt="Товарный знак «Кэт энерджи».">
-        <img class="logo__text logo__text--header" src="./img/logo-sign-mobile.svg" width="101" height="18" alt="Логотип «Кэт энерджи».">
+        <img class="logo__text logo__text--header" src="./img/logo-sign-mobile.svg" width="101" height="18"
+          alt="Логотип «Кэт энерджи».">
       </a>
 
       <nav class="main-nav">
-          <button class="main-nav__close" type="button">
-            <span class="visually-hidden">Открыть меню.</span>
-          </button>
-          <ul class="main-nav__list main-nav__list--open site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link  site-list__link--active">Подбор программы</a>
-            </li>
-          </ul>
+        <button class="main-nav__close" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <ul class="main-nav__list main-nav__list--open site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link  site-list__link--active">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="page__main page-form page__container">
-    <h1 class="page-form__title">Подбор программы</h1>
+  <main class="page__main page-form">
+    <div class="page__container">
+      <h1 class="page-form__title">Подбор программы</h1>
 
-    <p class="page-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="page-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    </div>
+
 
     <section class="page-form__section form-group">
-      <div class="form-group__wrapper"> <!-- В будущем обратить внимание на целесообразность обертки -->
-        <h2 class="visually-hidden">Заполнить форму</h2>
+      <h2 class="visually-hidden">Заполнить форму</h2>
 
-        <form class="form-group__area form" action="https://echo.htmlacademy.ru/" method="post">
-
+      <form class="form-group__area form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="page__container form__data">
           <fieldset class="form__field form__field--about field-group">
             <legend class="visually-hidden">Про кота</legend>
 
@@ -98,73 +101,87 @@
               </li>
             </ul>
           </fieldset>
+        </div>
 
-          <fieldset class="form__field field-group">
-            <legend class="field-group__title">Контактные данные (владельца кота)</legend>
+
+        <fieldset class="form__field field-group">
+          <div class="page__container">
+            <legend class="field-group__title field-group__title--data">Контактные данные (владельца кота)</legend>
 
             <ul class="field-group__list field-group__list--contacts">
-              <li class="field-group__item">
+              <li class="field-group__item  field-group__item--email">
                 <label class="field-group__description" for="field-group__mail">E-mail:*</label>
                 <input class="field-group__input" type="email" id="field-group__mail" name="email"
                   placeholder="kuklachev@gmail.com" required>
               </li>
 
-              <li class="field-group__item">
+              <li class="field-group__item field-group__item--phone">
                 <label class="field-group__description" for="field-group__phone">Телефон:*</label>
                 <input class="field-group__input" type="tel" id="field-group__phone" name="phone"
                   placeholder="8 (960) 900-60-90" required>
               </li>
             </ul>
-          </fieldset>
+          </div>
+        </fieldset>
 
-          <fieldset class="form__field field-group">
-            <legend class="field-group__title">Комментарий</legend>
+        <fieldset class="form__field field-group">
+          <div class="page__container">
+            <legend class="field-group__title field-group__title--comment">Комментарий</legend>
             <label class="field-group__description">
               <textarea class="field-group__input field-group__input--textarea"
                 name="comment">Расскажите обо всех повадках кота</textarea>
             </label>
-          </fieldset>
+          </div>
+        </fieldset>
 
-          <fieldset class="form__field field-group">
+        <fieldset class="form__field form__field--additional field-group">
+          <div class="page__container">
             <legend class="field-group__title">Дополнительно</legend>
 
             <ul class="field-group__list field-group__list--additional">
               <li class="field-group__item">
-                <label class="control control--checkbox">
-                  <input class="control__input" type="checkbox" name="additional" value="sweetener" checked>
+                <label class="control">
+                  <input class="control__input visually-hidden" type="checkbox" name="additional" value="sweetener"
+                    checked>
+                  <span class="control--checkbox"></span>
                   <span class="control__label">Cахарозаменитель</span>
                 </label>
               </li>
 
               <li class="field-group__item">
-                <label class="control control--checkbox">
-                  <input class="control__input" type="checkbox" name="additional" value="water">
+                <label class="control">
+                  <input class="control__input visually-hidden" type="checkbox" name="additional" value="water">
+                  <span class="control--checkbox"></span>
                   <span class="control__label">Питьевая вода</span>
                 </label>
               </li>
 
               <li class="field-group__item">
-                <label class="control control--checkbox">
-                  <input class="control__input" type="checkbox" name="additional" value="milk">
+                <label class="control">
+                  <input class="control__input visually-hidden" type="checkbox" name="additional" value="milk">
+                  <span class="control--checkbox"></span>
                   <span class="control__label">Молоко</span>
                 </label>
               </li>
 
               <li class="field-group__item">
-                <label class="control control--checkbox">
-                  <input class="control__input" type="checkbox" name="additional" value="vitamins">
+                <label class="control">
+                  <input class="control__input visually-hidden" type="checkbox" name="additional" value="vitamins">
+                  <span class="control--checkbox"></span>
                   <span class="control__label">Витамины</span>
                 </label>
               </li>
             </ul>
-          </fieldset>
+          </div>
+        </fieldset>
 
+        <div class="page__container">
           <div class="form__submit">
             <button class="form__button button">Отправить заявку</button>
             <p class="form__remark">* — Обязательные поля</p>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </section>
   </main>
 
