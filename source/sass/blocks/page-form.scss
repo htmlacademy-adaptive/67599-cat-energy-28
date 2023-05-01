@@ -6,6 +6,10 @@
   @media (min-width: variables.$tablet-width) {
     padding-top: 60px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-bottom: 82px;
+  }
 }
 
 .page-form__title {
@@ -22,6 +26,7 @@
   @media (min-width: variables.$tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding-left: 0;
   }
 }
 
@@ -42,5 +47,6 @@
     width: 323px;
     font-size: 20px;
     line-height: 30px;
+    padding-left: 0;
   }
 }
