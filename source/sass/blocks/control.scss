@@ -10,36 +10,6 @@
   color: variables.$color-subtitle;
   padding-left: 46px;
 
-  &--radio {
-    position: absolute;
-    top: -8px;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    border: 1px solid variables.$color-control;
-    border-radius: 50%;
-
-    @media (min-width: variables.$tablet-width) {
-      top: -6px;
-      left: -13px;
-      width: 40px;
-      height: 40px;
-    }
-  }
-
-  &--checkbox {
-    position: absolute;
-    top: -8px;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    border: 1px solid variables.$color-control;
-
-    @media (min-width: variables.$tablet-width) {
-      top: 0;
-    }
-  }
-
   @media (min-width: variables.$tablet-width) {
     padding-left: 43px;
     font-size: 20px;
@@ -47,7 +17,49 @@
   }
 }
 
-.control__input[type="radio"]:checked + .control--radio::before {
+.control__radio {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid variables.$color-control;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.2s;
+    border: 1px solid variables.$color-control-hover;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    top: -6px;
+    left: -13px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.control__checkbox {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid variables.$color-control;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.2s;
+    border: 1px solid variables.$color-control-hover;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    top: 0;
+  }
+}
+
+.control__input[type="radio"]:checked + .control__radio::before {
   position: absolute;
   content: "";
   top: 50%;
@@ -64,7 +76,13 @@
   }
 }
 
-.control__input[type="checkbox"]:checked + .control--checkbox::before {
+.control__input[type="radio"]:disabled + .control__radio,
+.control__input[type="radio"]:disabled:hover + .control__radio {
+  border: 1px solid variables.$color-control-hover;
+  opacity: 0.3;
+}
+
+.control__input[type="checkbox"]:checked + .control__checkbox::before {
   position: absolute;
   content: "";
   top: 0;
@@ -73,4 +91,10 @@
   height: 30px;
   background-image: url("./../img/icon-tick.svg");
   background-size: 30px 30px;
+}
+
+.control__input[type="checkbox"]:disabled + .control__checkbox,
+.control__input[type="checkbox"]:disabled:hover + .control__checkbox {
+  border: 1px solid variables.$color-control-hover;
+  opacity: 0.3;
 }
