@@ -58,6 +58,17 @@
   @media (min-width: variables.$desktop-width) {
     width: 168px;
   }
+
+  &:hover {
+    transition: all 0.2s;
+    background-color: variables.$color-border-eighth;
+  }
+
+  &:active {
+    transition: all 0.2s;
+    background-color: variables.$color-border-eighth;
+    color: variables.$color-title-hover;
+  }
 }
 
 .show-more__plus {

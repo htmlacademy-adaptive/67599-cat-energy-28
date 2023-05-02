@@ -104,4 +104,15 @@
     top: 230px;
     left: 90px;
   }
+
+  &:hover {
+    transition: all 0.2s;
+    background-color: variables.$color-background-hover;
+  }
+
+  &:active {
+    transition: all 0.2s;
+    background-color: variables.$color-background-hover;
+    color: variables.$color-title-second-hover;
+  }
 }

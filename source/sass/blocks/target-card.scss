@@ -161,6 +161,23 @@
     width: 24px;
     height: 12px;
     background-image: url("./../img/icon-arrow.svg");
+    background-size: 18px 12px;
     background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    transition: all 0.2s;
+    background-size: 24px 12px;
+  }
+
+  &:active::after {
+    transition: all 0.2s;
+    background-size: 24px 12px;
+    opacity: 0.3;
+  }
+
+  &:active {
+    transition: all 0.2s;
+    opacity: 0.3;
   }
 }

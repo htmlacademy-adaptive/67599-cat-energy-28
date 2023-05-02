@@ -70,6 +70,17 @@
     margin: 0;
     margin-left: auto;
   }
+
+  &:hover {
+    transition: all 0.2s;
+    background-color: variables.$color-background-hover;
+  }
+
+  &:active {
+    transition: all 0.2s;
+    background-color: variables.$color-background-hover;
+    color: variables.$color-title-second-hover;
+  }
 }
 
 .card-additional__quantity {

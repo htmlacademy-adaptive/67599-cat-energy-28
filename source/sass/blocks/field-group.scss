@@ -60,35 +60,19 @@
   }
 }
 
+.field-group__icon {
+  position: absolute;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  color: variables.$color-title;
+}
+
 .field-group__item {
   position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 14px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 50%;
-    transform: translateY(-50%);
-    right: 15px;
-    width: 20px;
-    height: 20px;
-  }
-
-  &--email {
-    &::before {
-      background-image: url("./../img/icon-email.svg");
-      background-size: 20px 20px;
-    }
-  }
-
-  &--phone {
-    &::before {
-      background-image: url("./../img/icon-phone.svg");
-      background-size: 20px 20px;
-    }
-  }
 
   @media (min-width: variables.$tablet-width) {
     margin-bottom: 20px;
@@ -124,7 +108,34 @@
   color: variables.$color-text;
   padding: 14px 20px;
   width: 100%;
-  border: 2px solid variables.$color-background-second;
+  border: 1px solid variables.$color-border-input;
+
+  &:hover {
+    transition: all 0.2s;
+    border: 1px solid variables.$color-control;
+  }
+
+  &:focus {
+    transition: all 0.2s;
+    outline: 2px solid variables.$color-text;
+  }
+
+  &:focus + .field-group__icon {
+    transition: all 0.2s;
+    color: variables.$color-background;
+  }
+
+  // Input error
+  // &:invalid + .field-group__icon {
+  //   transition: all 0.2s;
+  //   color: variables.$color-border-input-error;
+  // }
+
+  // Input error
+  // &:invalid {
+  //   transition: all 0.2s;
+  //   outline: 2px solid variables.$color-border-input-error;
+  // }
 
   @media (min-width: variables.$tablet-width) {
     font-size: 20px;
