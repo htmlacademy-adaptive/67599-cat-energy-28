@@ -2,17 +2,27 @@
 @use "../mixins.scss";
 
 .field-group {
-  padding: 0 20px;
+  padding: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 20px 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0;
+  }
 }
 
 .field-group__list {
   @include mixins.list-style;
-  margin-bottom: 45px;
   display: grid;
+  grid-auto-rows: minmax(50px, auto);
+  box-sizing: border-box;
 
   &--contacts {
     @media (min-width: variables.$desktop-width) {
       margin: 0;
+      margin-bottom: 67px;
       grid-template-columns: repeat(2, 1fr);
       gap: 80px;
       align-items: center;
@@ -22,23 +32,60 @@
   &--additional {
     @media (min-width: variables.$tablet-width) {
       grid-template-columns: repeat(2, 1fr);
-      grid-auto-rows: auto;
     }
 
     @media (min-width: variables.$desktop-width) {
       grid-template-columns: repeat(4, 1fr);
       grid-auto-rows: auto;
+      margin-bottom: 74px;
+    }
+  }
+
+  &--data {
+    @media (min-width: variables.$desktop-width) {
+      row-gap: 25px;
+    }
+  }
+
+  &--target {
+    @media (min-width: variables.$tablet-width) {
+      padding: 0 40px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      row-gap: 0;
+      margin-top: 25px;
+      padding: 0 40px;
     }
   }
 }
 
+.field-group__icon {
+  position: absolute;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  color: variables.$color-title;
+}
+
 .field-group__item {
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 14px;
 
-  @media (min-width: variables.$desktop-width) {
+  @media (min-width: variables.$tablet-width) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0;
+  }
+
+  &--advice {
+    @media (min-width: variables.$tablet-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -51,6 +98,11 @@
   white-space: nowrap;
   color: variables.$color-text;
   margin-right: 13px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .field-group__input {
@@ -62,6 +114,43 @@
   color: variables.$color-text;
   padding: 14px 20px;
   width: 100%;
+  border: 1px solid variables.$color-border-input;
+
+  &:hover {
+    transition: all 0.2s;
+    border: 1px solid variables.$color-control;
+  }
+
+  &:focus {
+    transition: all 0.2s;
+    outline: 2px solid variables.$color-text;
+  }
+
+  &:focus + .field-group__icon {
+    transition: all 0.2s;
+    color: variables.$color-background;
+  }
+
+  // Input error
+  // &:invalid + .field-group__icon {
+  //   transition: all 0.2s;
+  //   color: variables.$color-border-input-error;
+  // }
+
+  // Input error
+  // &:invalid {
+  //   transition: all 0.2s;
+  //   outline: 2px solid variables.$color-border-input-error;
+  // }
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 8px 20px;
+  }
 
   &--textarea {
     display: block;
@@ -71,19 +160,55 @@
     width: 100%;
     min-height: 150px;
     margin: 0 auto;
+
+    @media (min-width: variables.$tablet-width) {
+      min-height: 174px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      margin-bottom: 67px;
+    }
   }
 }
 
 .field-group__title {
+  display: inline-block;
   font-family: variables.$font-title;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: variables.$color-title;
-  margin-left: 20px;
   margin-bottom: 35px;
+  background-color: variables.$color-title-second;
+  width: 190px;
+
+  &--data {
+    @media (min-width: variables.$tablet-width) {
+      width: 514px;
+    }
+  }
+
+  &--comment {
+    @media (min-width: variables.$tablet-width) {
+      width: 182px;
+    }
+  }
+
+  &--additional {
+    @media (min-width: variables.$tablet-width) {
+      width: 211px;
+    }
+  }
 
   @media (min-width: variables.$tablet-width) {
+    position: relative;
+    z-index: 2;
     font-size: 36px;
+    padding: 0 40px;
+    margin: 0;
+    margin-bottom: 75px;
+    transform: translateX(-40px);
   }
 }

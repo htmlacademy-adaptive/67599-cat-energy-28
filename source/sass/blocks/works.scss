@@ -25,6 +25,7 @@
   @media (min-width: variables.$tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 180px;
   }
 }
 
@@ -46,12 +47,83 @@
 }
 
 .works__item {
+  position: relative;
+  min-height: 60px;
   margin-bottom: 20px;
+  padding-left: 80px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: variables.$color-background;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: variables.$tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: -120px;
+    }
+  }
+
+  &::after {
+    @media (min-width: variables.$tablet-width) {
+      counter-increment: section;
+      content: counter(section);
+      position: absolute;
+      top: -165px;
+      right: 20px;
+      z-index: -1;
+      font-family: variables.$font-title;
+      font-style: normal;
+      font-size: 280px;
+      line-height: 280px;
+      color: variables.$color-background-second;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      right: 5px;
+    }
+  }
+
+  &--nutricion {
+    &::before {
+      background-image: url("./../img/icon-leaf.svg");
+      background-size: 34px 28px;
+    }
+  }
+
+  &--release {
+    &::before {
+      background-image: url("./../img/icon-powder.svg");
+      background-size: 25px 28px;
+    }
+  }
+
+  &--mode {
+    &::before {
+      background-image: url("./../img/icon-eat.svg");
+      background-size: 25px 30px;
+    }
+  }
+
+  &--change {
+    &::before {
+      background-image: url("./../img/icon-time.svg");
+      background-size: 26px 31px;
+    }
+  }
 
   @media (min-width: variables.$tablet-width) {
     width: 245px;
     font-size: 16px;
     line-height: 24px;
+    padding-left: 0;
+    margin-bottom: 180px;
   }
 
   @media (min-width: variables.$desktop-width) {

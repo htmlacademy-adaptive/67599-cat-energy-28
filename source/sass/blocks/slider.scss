@@ -2,7 +2,7 @@
 @use "../mixins.scss";
 
 .slider {
-  padding-bottom: 100px;
+  position: relative;
 
   @media (min-width: variables.$desktop-width) {
     background-color: variables.$color-background-third;
@@ -12,76 +12,115 @@
 .slider__list {
   @include mixins.list-style;
   position: relative;
+  display: flex;
   text-align: center;
+  margin: 0 auto;
+  width: 280px;
   height: 260px;
 
   @media (min-width: variables.$tablet-width) {
+    bottom: 100px;
+    width: 560px;
+    height: 512px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
     bottom: 150px;
+    right: 0;
   }
 }
 
 .slider__item {
-  &--after {
-    position: relative;
-    bottom: 260px;
-
-    @media (min-width: variables.$tablet-width) {
-      bottom: 520px;
-    }
-  }
+  position: relative;
+  width: 50%;
+  overflow: hidden;
 }
 
 .slider__swiper {
+  position: absolute;
+  z-index: 1;
   text-align: center;
+  width: 4px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  border-radius: 2px;
+  background-color: variables.$color-border;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: variables.$color-title-second;
+    border: 2px solid variables.$color-border;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 18px;
+    background-image: url("./../img/arrows.svg");
+    cursor: pointer;
+  }
 
   @media (min-width: variables.$tablet-width) {
-    position: absolute;
-    bottom: 10px;
-    right: 300px;
+    top: -100px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    position: absolute;
-    bottom: 70px;
-    right: 235px;
+    top: -150px;
   }
-}
 
-.slider__button {
-  width: 40px;
-  height: 40px;
-  background: variables.$color-title-second;
-  border: 2px solid variables.$color-border;
-  border-radius: 20px;
-  cursor: pointer;
+  &:hover {
+    transition: all 0.2s;
+    background-color: variables.$color-background;
+  }
+
+  &:hover::before {
+    transition: all 0.2s;
+    border: 2px solid variables.$color-background;
+  }
+
+  &:hover::after {
+    transition: all 0.2s;
+    background-image: url("./../img/arrows-hover.svg");
+  }
+
+  &:active {
+    transition: all 0.2s;
+    opacity: 0.6;
+  }
 }
 
 .slider__before {
+  width: 280px;
+  max-width: none;
+  height: auto;
+
   @media (min-width: variables.$tablet-width) {
-    display: none;
-  }
-
-  &--tablet {
-    display: none;
-
-    @media (min-width: variables.$tablet-width) {
-      display: block;
-      margin: 0 auto;
-    }
+    width: 560px;
   }
 }
 
 .slider__after {
+  width: 280px;
+  max-width: none;
+  height: 100%;
+  transform: translateX(-50%);
+
   @media (min-width: variables.$tablet-width) {
-    display: none;
-  }
-
-  &--tablet {
-    display: none;
-
-    @media (min-width: variables.$tablet-width) {
-      display: block;
-      margin: 0 auto;
-    }
+    width: 560px;
   }
 }

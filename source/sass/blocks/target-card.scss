@@ -12,9 +12,18 @@
   box-sizing: border-box;
   padding: 30px 20px 18px;
   background-color: variables.$color-background-second;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 70px;
+  }
 }
 
 .target-card__title {
+  position: relative;
   font-family: variables.$font-title;
   font-weight: 400;
   font-size: 24px;
@@ -22,7 +31,85 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
-  text-align: center;
+  padding-left: 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: variables.$color-background;
+
+    @media (min-width: variables.$tablet-width) {
+      top: 0;
+      left: 400px;
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      top: -35px;
+      left: 0;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 5px;
+    width: 36px;
+    height: 50px;
+    background-image: url("./../img/cat-slim.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: variables.$tablet-width) {
+      top: 0;
+      left: 435px;
+      width: 140px;
+      height: 194px;
+      background-size: 140px 194px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      top: -40px;
+      left: 15px;
+      width: 70px;
+      height: 97px;
+      background-size: 70px 97px;
+    }
+  }
+
+  &--pro {
+    &::after {
+      top: 5px;
+      left: -10px;
+      width: 68px;
+      height: 28px;
+      background-image: url("./../img/cat-pro.svg");
+
+      @media (min-width: variables.$tablet-width) {
+        top: 52px;
+        left: 370px;
+        width: 268px;
+        height: 112px;
+        background-size: 268px 112px;
+      }
+
+      @media (min-width: variables.$desktop-width) {
+        top: -15px;
+        left: -20px;
+        width: 134px;
+        height: 56px;
+        background-size: 134px 56px;
+      }
+    }
+  }
 
   @media (min-width: variables.$tablet-width) {
     font-size: 36px;
@@ -32,6 +119,7 @@
 
   @media (min-width: variables.$desktop-width) {
     text-align: center;
+    margin-bottom: 60px;
   }
 }
 
@@ -54,6 +142,7 @@
 }
 
 .target-card__link {
+  position: relative;
   display: block;
   font-family: variables.$font-title;
   font-weight: 400;
@@ -63,4 +152,32 @@
   color: variables.$color-title;
   text-decoration: none;
   margin-top: 19px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 100px;
+    width: 24px;
+    height: 12px;
+    background-image: url("./../img/icon-arrow.svg");
+    background-size: 18px 12px;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    transition: all 0.2s;
+    background-size: 24px 12px;
+  }
+
+  &:active::after {
+    transition: all 0.2s;
+    background-size: 24px 12px;
+    opacity: 0.3;
+  }
+
+  &:active {
+    transition: all 0.2s;
+    opacity: 0.3;
+  }
 }

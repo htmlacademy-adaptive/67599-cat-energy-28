@@ -3,8 +3,6 @@
 .developer {
   padding: 20px 0 30px;
   background-color: variables.$color-background-second;
-  display: flex;
-  justify-content: space-between;
 
   @media (min-width: variables.$tablet-width) {
     padding: 0;
@@ -17,4 +15,34 @@
   line-height: 19px;
   color: variables.$color-text;
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 27px;
+
+  &:hover .developer__image,
+  &:focus .developer__image {
+    transition: all 0.2s;
+    color: variables.$color-background;
+  }
+
+  &:active .developer__image {
+    transition: all 0.2s;
+    color: variables.$color-background;
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus .social__icon {
+    color: variables.$color-background;
+  }
+}
+
+.developer__image {
+  width: 27px;
+  height: 34px;
+  color: variables.$color-border;
 }

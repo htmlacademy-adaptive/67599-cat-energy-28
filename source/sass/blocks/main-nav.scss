@@ -99,3 +99,32 @@
     display: none;
   }
 }
+
+.main-nav__divider {
+  display: block;
+  position: absolute;
+  top: -40px;
+  right: 20px;
+  height: 1.5px;
+  width: 24px;
+  background-color: variables.$color-title;
+  border: none;
+  transform: rotate(45deg);
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1.5px;
+    width: 24px;
+    background-color: variables.$color-title;
+    border: none;
+    transform: rotate(90deg);
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+}
