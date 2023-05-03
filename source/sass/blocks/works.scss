@@ -72,7 +72,8 @@
 
   &::after {
     @media (min-width: variables.$tablet-width) {
-      content: "";
+      counter-increment: section;
+      content: counter(section);
       position: absolute;
       top: -165px;
       right: 20px;
@@ -94,24 +95,12 @@
       background-image: url("./../img/icon-leaf.svg");
       background-size: 34px 28px;
     }
-
-    &::after {
-      @media (min-width: variables.$tablet-width) {
-        content: "1";
-      }
-    }
   }
 
   &--release {
     &::before {
       background-image: url("./../img/icon-powder.svg");
       background-size: 25px 28px;
-    }
-
-    &::after {
-      @media (min-width: variables.$tablet-width) {
-        content: "2";
-      }
     }
   }
 
@@ -120,24 +109,12 @@
       background-image: url("./../img/icon-eat.svg");
       background-size: 25px 30px;
     }
-
-    &::after {
-      @media (min-width: variables.$tablet-width) {
-        content: "3";
-      }
-    }
   }
 
   &--change {
     &::before {
       background-image: url("./../img/icon-time.svg");
       background-size: 26px 31px;
-    }
-
-    &::after {
-      @media (min-width: variables.$tablet-width) {
-        content: "4";
-      }
     }
   }
 

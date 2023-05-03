@@ -2,25 +2,23 @@
 
 .control {
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
   font-family: variables.$font-title;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: variables.$color-subtitle;
-  padding-left: 46px;
 
   @media (min-width: variables.$tablet-width) {
-    padding-left: 43px;
     font-size: 20px;
     line-height: 30px;
   }
 }
 
 .control__radio {
-  position: absolute;
-  top: -8px;
-  left: 0;
   width: 30px;
   height: 30px;
   border: 1px solid variables.$color-control;
@@ -41,9 +39,6 @@
 }
 
 .control__checkbox {
-  position: absolute;
-  top: -8px;
-  left: 0;
   width: 30px;
   height: 30px;
   border: 1px solid variables.$color-control;
@@ -63,8 +58,8 @@
   position: absolute;
   content: "";
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 9px;
+  transform: translateY(-50%);
   width: 13px;
   height: 13px;
   background-color: variables.$color-background;
@@ -73,6 +68,7 @@
   @media (min-width: variables.$tablet-width) {
     width: 18px;
     height: 18px;
+    left: 12px;
   }
 }
 

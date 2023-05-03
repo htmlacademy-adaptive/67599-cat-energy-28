@@ -50,7 +50,7 @@
     transform: translateX(-50%);
     width: 78px;
     height: 80px;
-    background-image: url("../../img/icon_gift.svg");
+    background-image: url("./../img/icon_gift.svg");
 
     @media (min-width: variables.$tablet-width) {
       top: 50%;
@@ -92,8 +92,7 @@
 
   @media (min-width: variables.$desktop-width) {
     position: relative;
-    left: -20px;
-    padding: 0;
+    left: -40px;
     margin: 0;
   }
 }

@@ -16,6 +16,10 @@
     align-items: center;
     justify-content: end;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    background-size: auto;
+  }
 }
 
 .present__description {

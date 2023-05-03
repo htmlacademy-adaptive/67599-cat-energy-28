@@ -81,6 +81,12 @@
   @media (min-width: variables.$desktop-width) {
     margin: 0;
   }
+
+  &--advice {
+    @media (min-width: variables.$tablet-width) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .field-group__description {
@@ -201,10 +207,8 @@
     z-index: 2;
     font-size: 36px;
     padding: 0 40px;
-    transform: translateX(-40px);
-  }
-
-  @media (min-width: variables.$desktop-width) {
+    margin: 0;
     margin-bottom: 75px;
+    transform: translateX(-40px);
   }
 }

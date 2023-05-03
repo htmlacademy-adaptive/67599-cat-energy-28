@@ -2,8 +2,6 @@
 
 .target {
   @media (min-width: variables.$desktop-width) {
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
     display: flex;
     gap: 80px;
   }
