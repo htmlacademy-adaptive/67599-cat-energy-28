@@ -11,6 +11,11 @@
   text-align: center;
   line-height: 20px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/catbag-mobile@2x.jpg");
+  }
+
+
   @media (min-width: variables.$tablet-width) {
     display: flex;
     align-items: center;

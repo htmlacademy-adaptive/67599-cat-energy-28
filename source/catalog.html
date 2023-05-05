@@ -15,9 +15,11 @@
   <header class="page__header">
     <div class="page__container main-header">
       <a class="main-header__logo logo" href="./index.html">
-        <img class="logo__image" src="./img/logo-mobile.svg" width="33" height="37" alt="Товарный знак «Кэт энерджи».">
-        <img class="logo__text logo__text--header" src="./img/logo-sign-mobile.svg" width="101" height="18"
-          alt="Логотип «Кэт энерджи».">
+        <picture>
+          <source media="(min-width: 769px)" srcset="./img/logo-tablet.svg">
+          <source media="(min-width: 1440px)" srcset="./img/logo-desktopt.svg">
+          <img class="logo__image" src="./img/logo-mobile.svg" width="191" height="37" alt="Логотип «Кэт энерджи».">
+        </picture>
       </a>
 
       <nav class="main-nav">
@@ -49,8 +51,12 @@
         <ul class="products__list">
           <li class="products__item card">
             <a href="#" class="card__link card__link--image">
-              <img class="card__image" width="68" height="86" src="./img/catalog/catalog-1-mobile.png"
-                alt="Cat Energy PRO 500 г.">
+              <picture>
+                <source media="(min-width: 769px)" width="161" height="172"
+                  srcset="./img/catalog/catalog-1-desktop.png 1x, ./img/catalog/catalog-1-desktop@2x.png 2x">
+                <img class="card__image" width="68" height="86" src="./img/catalog/catalog-1-mobile.png"
+                  srcset="./img/catalog/catalog-1-mobile@2x.png 2x" alt="Cat Energy PRO 500 г.">
+              </picture>
             </a>
 
             <a href="#" class="card__link card__link--subtitle">
