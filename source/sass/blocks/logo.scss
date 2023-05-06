@@ -27,12 +27,18 @@
 }
 
 .logo__image {
-  margin-right: 56px;
-}
+  width: 191px;
+  height: 37px;
 
-.logo__text {
-  width: 101px;
-  height: 18px;
+  @media (min-width: variables.$tablet-width) {
+    width: 174px;
+    height: 51px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
 
   &--footer {
     @media (min-width: variables.$tablet-width) {

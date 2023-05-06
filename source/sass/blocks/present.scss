@@ -11,14 +11,30 @@
   text-align: center;
   line-height: 20px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("./../img/background/catbag-mobile@2x.jpg");
+  }
+
+
   @media (min-width: variables.$tablet-width) {
     display: flex;
     align-items: center;
     justify-content: end;
+    background-image: url("./../img/background/catbag-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../img/background/catbag-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: variables.$desktop-width) {
     background-size: auto;
+
+    background-image: url("./../img/background/catbag-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../img/background/catbag-desktop@2x.jpg");
+    }
   }
 }
 

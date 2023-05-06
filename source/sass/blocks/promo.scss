@@ -10,6 +10,10 @@
   background-repeat: no-repeat;
   text-align: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/promo-mobile@2x.jpg"), linear-gradient(variables.$color-background, variables.$color-background);
+  }
+
   @media (min-width: variables.$tablet-width) {
     background-image: none;
     color: variables.$color-title;
@@ -35,6 +39,10 @@
       z-index: -1;
       background-image: url("../img/background/promo.jpg");
       background-size: 100% auto;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background//promo@2x.jpg");
+      }
     }
   }
 }
