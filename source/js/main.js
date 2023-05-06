@@ -24,4 +24,3 @@ buttonMenu.addEventListener('click', function() {
   buttonMenu.classList.toggle('main-nav__open');
   buttonMenu.classList.toggle('main-nav__close');
 });
-
