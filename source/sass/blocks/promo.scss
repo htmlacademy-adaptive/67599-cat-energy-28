@@ -11,7 +11,7 @@
   text-align: center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/background/promo-mobile@2x.jpg");
+    background-image: url("../img/background/promo-mobile@2x.jpg"), linear-gradient(variables.$color-background, variables.$color-background);
   }
 
   @media (min-width: variables.$tablet-width) {
