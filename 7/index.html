@@ -17,8 +17,8 @@
     <div class="page__container main-header">
       <a class="main-header__logo logo">
         <picture>
-          <source media="(min-width: 769px)" srcset="./img/logo-tablet.svg">
-          <source media="(min-width: 1440px)" srcset="./img/logo-desktopt.svg">
+          <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg" width="174" height="51">
+          <source media="(min-width: 769px)" srcset="./img/logo-tablet.svg" width="202" height="59">
           <img class="logo__image" src="./img/logo-mobile.svg" width="191" height="37" alt="Логотип «Кэт энерджи».">
         </picture>
       </a>
@@ -138,7 +138,7 @@
             <li class="slider__item slider__item--before">
               <picture>
                 <source media="(min-width: 769px)" width="560" height="512"
-                  srcset="./img/before-tablet.png 1x, ./img/before-tablet.p@2x.png 2x">
+                  srcset="./img/before-tablet.png 1x, ./img/before-tablet@2x.png 2x">
                 <img class="slider__before" width="280" height="256" src="./img/before-mobile.png"
                   srcset="./img/before-mobile@2x.png 2x" alt="Толстый кот.">
               </picture>
@@ -146,7 +146,7 @@
             <li class="slider__item slider__item--after">
               <picture>
                 <source media="(min-width: 769px)" width="560" height="512"
-                  srcset="./img/after-tablet.png 1x, ./img/after-tablet.p@2x.png 2x">
+                  srcset="./img/after-tablet.png 1x, ./img/after-tablet@2x.png 2x">
                 <img class="slider__after" width="280" height="256" src="./img/after-mobile.png"
                   srcset="./img/after-mobile@2x.png 2x" alt="Толстый кот.">
               </picture>
@@ -184,8 +184,12 @@
 
     <div class="main-footer__wrapper page__container">
       <a class="main-footer__logo logo logo--footer">
-        <img class="logo__text logo__text--footer" src="./img/logo-sign-mobile.svg" width="128" height="24"
+        <picture>
+          <source media="(min-width: 769px)" srcset="./img/footer-logo-tablet.svg" width="142" height="26">
+          <img class="logo__text logo__text--footer" src="./img/footer-logo-tablet.svg" width="128" height="24"
           alt="Логотип «CAT ENERGY».">
+        </picture>
+
       </a>
 
       <ul class="main-footer__social social">

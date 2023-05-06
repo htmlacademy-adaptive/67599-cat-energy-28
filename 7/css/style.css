@@ -316,7 +316,7 @@ img {
   position: relative;
   padding: 27px 20px;
   color: #ffffff;
-  background-image: url("../img/background/promo-mobile.jpg"), linear-gradient(#68b738, #68b738);
+  background-image: url("./../img/background/promo-mobile.jpg"), linear-gradient(#68b738, #68b738);
   background-size: auto 302px;
   background-position: top;
   background-repeat: no-repeat;
@@ -324,7 +324,7 @@ img {
 }
 @media (min-resolution: 2dppx) {
   .promo {
-    background-image: url("../img/background/promo-mobile@2x.jpg"), linear-gradient(#68b738, #68b738);
+    background-image: url("./../img/background/promo-mobile@2x.jpg"), linear-gradient(#68b738, #68b738);
   }
 }
 @media (min-width: 769px) {
@@ -2462,7 +2462,7 @@ img {
 }
 @media (min-resolution: 2dppx) {
   .present {
-    background-image: url("../img/background/catbag-mobile@2x.jpg");
+    background-image: url("./../img/background/catbag-mobile@2x.jpg");
   }
 }
 @media (min-width: 769px) {
@@ -2470,11 +2470,23 @@ img {
     display: flex;
     align-items: center;
     justify-content: end;
+    background-image: url("./../img/background/catbag-tablet.jpg");
+  }
+}
+@media (min-width: 769px) and (min-resolution: 2dppx) {
+  .present {
+    background-image: url("./../img/background/catbag-tablet@2x.jpg");
   }
 }
 @media (min-width: 1440px) {
   .present {
     background-size: auto;
+    background-image: url("./../img/background/catbag-desktop.jpg");
+  }
+}
+@media (min-width: 1440px) and (min-resolution: 2dppx) {
+  .present {
+    background-image: url("./../img/background/catbag-desktop@2x.jpg");
   }
 }
 
