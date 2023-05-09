@@ -11,6 +11,7 @@
 }
 
 .developer__link {
+  position: relative;
   font-size: 16px;
   line-height: 19px;
   color: variables.$color-text;
@@ -19,6 +20,19 @@
   justify-content: space-between;
   align-items: center;
   gap: 27px;
+  padding-right: 54px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    mask-image: url("../img/sprites/stack.svg#icon-developer");
+    background-color: variables.$color-border;
+    width: 27px;
+    height: 34px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
 
   &:hover .developer__image,
   &:focus .developer__image {
