@@ -2,10 +2,10 @@
 
 .promo {
   position: relative;
-  padding: 27px 20px;
+  padding: 18px 20px;
   color: variables.$color-title-second;
   background-image: url("../img/background/promo-mobile.jpg"), linear-gradient(variables.$color-background, variables.$color-background);
-  background-size: auto 302px;
+  background-size: auto 295px;
   background-position: top;
   background-repeat: no-repeat;
   text-align: center;
@@ -103,7 +103,7 @@
 
 .promo__button {
   display: block;
-  padding: 7px;
+  padding: 13px;
   box-sizing: border-box;
 
   @media (min-width: variables.$tablet-width) {

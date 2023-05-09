@@ -1,7 +1,7 @@
 @use "../variables.scss";
 
 .developer {
-  padding: 20px 0 30px;
+  padding: 29px 0 30px;
   background-color: variables.$color-background-second;
 
   @media (min-width: variables.$tablet-width) {
@@ -27,22 +27,22 @@
     content: "";
     mask-image: url("../img/sprites/stack.svg#icon-developer");
     background-color: variables.$color-border;
-    width: 27px;
-    height: 34px;
+    width: 42px;
+    height: 55px;
     top: 50%;
-    right: 0;
+    right: -7px;
     transform: translateY(-50%);
   }
 
-  &:hover .developer__image,
-  &:focus .developer__image {
+  &:hover::after,
+  &:focus::after {
     transition: all 0.2s;
-    color: variables.$color-background;
+    background-color: variables.$color-background;
   }
 
-  &:active .developer__image {
+  &:active::after {
     transition: all 0.2s;
-    color: variables.$color-background;
+    background-color: variables.$color-background;
     opacity: 0.3;
   }
 
@@ -53,10 +53,4 @@
   &:focus .social__icon {
     color: variables.$color-background;
   }
-}
-
-.developer__image {
-  width: 27px;
-  height: 34px;
-  color: variables.$color-border;
 }

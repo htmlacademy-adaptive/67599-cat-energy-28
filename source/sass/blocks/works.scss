@@ -2,7 +2,7 @@
 @use "../mixins.scss";
 
 .works {
-  padding: 20px;
+  padding: 27px 20px;
 
   @media (min-width: variables.$tablet-width) {
     padding: 20px 0;

@@ -13,7 +13,7 @@
   border: 1px solid variables.$color-border-fifth;
   border-radius: 3px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 
   @media (min-width: variables.$tablet-width) {
     width: 162px;
@@ -36,7 +36,7 @@
   line-height: 24px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 
   @media (min-width: variables.$tablet-width) {
     font-size: 30px;
