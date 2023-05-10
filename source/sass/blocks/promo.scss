@@ -24,7 +24,7 @@
 
   @media (min-width: variables.$desktop-width) {
     min-height: 560px;
-    padding-top: 111px;
+    padding-top: 108px;
   }
 
   &::before {
@@ -35,7 +35,7 @@
       width: 50%;
       height: 694px;
       right: 0;
-      top: -105px;
+      top: -115px;
       z-index: -1;
       background-image: url("../img/background/promo.jpg");
       background-size: 100% auto;
@@ -59,7 +59,7 @@
     width: 420px;
     font-size: 60px;
     line-height: 60px;
-    padding-left: 90px;
+    padding-left: 80px;
     margin-bottom: 40px;
   }
 }
@@ -76,7 +76,7 @@
   @media (min-width: variables.$tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    padding-left: 90px;
+    padding-left: 80px;
     margin-bottom: 20px;
   }
 }
@@ -109,8 +109,8 @@
   @media (min-width: variables.$tablet-width) {
     width: 244px;
     position: absolute;
-    top: 230px;
-    left: 90px;
+    top: 232px;
+    left: 80px;
   }
 
   &:hover {
