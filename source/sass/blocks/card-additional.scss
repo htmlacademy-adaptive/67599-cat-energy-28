@@ -9,7 +9,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 327px repeat(2, 1fr);
     grid-template-rows: minmax(40px, auto);
     align-items: center;
   }
@@ -69,17 +69,6 @@
     grid-column: 3 / 4;
     margin: 0;
     margin-left: auto;
-  }
-
-  &:hover {
-    transition: all 0.2s;
-    background-color: variables.$color-background-hover;
-  }
-
-  &:active {
-    transition: all 0.2s;
-    background-color: variables.$color-background-hover;
-    color: variables.$color-title-second-hover;
   }
 }
 

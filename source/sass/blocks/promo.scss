@@ -23,7 +23,6 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    min-height: 560px;
     padding-top: 108px;
   }
 
@@ -44,6 +43,12 @@
         background-image: url("../img/background/promo@2x.jpg");
       }
     }
+  }
+}
+
+.promo__block {
+  @media (min-width: variables.$desktop-width) {
+    min-height: 560px;
   }
 }
 
@@ -111,16 +116,5 @@
     position: absolute;
     top: 232px;
     left: 80px;
-  }
-
-  &:hover {
-    transition: all 0.2s;
-    background-color: variables.$color-background-hover;
-  }
-
-  &:active {
-    transition: all 0.2s;
-    background-color: variables.$color-background-hover;
-    color: variables.$color-title-second-hover;
   }
 }

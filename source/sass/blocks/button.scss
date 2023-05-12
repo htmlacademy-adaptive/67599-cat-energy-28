@@ -13,6 +13,7 @@
   font-weight: 400;
   text-align: center;
   cursor: pointer;
+  transition: all 0.2s;
 
   &--more {
     color: variables.$color-text;
@@ -28,5 +29,14 @@
       line-height: 20px;
       padding: 17px 10px;
     }
+  }
+
+  &:hover {
+    background-color: variables.$color-background-hover;
+  }
+
+  &:active {
+    background-color: variables.$color-background-hover;
+    color: variables.$color-title-second-hover;
   }
 }

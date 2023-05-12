@@ -32,16 +32,15 @@
     top: 50%;
     right: -7px;
     transform: translateY(-50%);
+    transition: all 0.2s;
   }
 
   &:hover::after,
   &:focus::after {
-    transition: all 0.2s;
     background-color: variables.$color-background;
   }
 
   &:active::after {
-    transition: all 0.2s;
     background-color: variables.$color-background;
     opacity: 0.3;
   }

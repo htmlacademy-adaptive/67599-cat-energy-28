@@ -128,6 +128,7 @@
   margin: 0;
   padding-bottom: 23px;
   border-bottom: 1px solid variables.$color-border-third;
+  margin-bottom: 19px;
 
   @media (min-width: variables.$tablet-width) {
     border-bottom: none;
@@ -153,33 +154,35 @@
   text-transform: uppercase;
   color: variables.$color-title;
   text-decoration: none;
-  margin-top: 19px;
 
   &::after {
     content: "";
     position: absolute;
-    top: 3px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 100px;
     width: 24px;
     height: 12px;
     background-image: url("./../img/icon-arrow.svg");
     background-size: 18px 12px;
     background-repeat: no-repeat;
+    transition: all 0.2s;
+
+    @media (min-width: variables.$desktop-width) {
+      left: 161px;
+    }
   }
 
   &:hover::after {
-    transition: all 0.2s;
     background-size: 24px 12px;
   }
 
   &:active::after {
-    transition: all 0.2s;
     background-size: 24px 12px;
     opacity: 0.3;
   }
 
   &:active {
-    transition: all 0.2s;
     opacity: 0.3;
   }
 

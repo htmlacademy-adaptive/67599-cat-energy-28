@@ -1,8 +1,6 @@
 @use "../variables.scss";
-@use "../mixins.scss";
 
 .result {
-  @include mixins.list-style;
   display: flex;
   justify-content: center;
   gap: 42px;

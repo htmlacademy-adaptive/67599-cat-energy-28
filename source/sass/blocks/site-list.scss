@@ -1,9 +1,6 @@
 @use "../variables.scss";
-@use "../mixins.scss";
 
 .site-list {
-  @include mixins.list-style;
-
   @media (min-width: variables.$tablet-width) {
     display: flex;
     gap: 35px;
@@ -32,6 +29,7 @@
   text-decoration: none;
   color: variables.$color-title;
   padding: 22px 0;
+  transition: all 0.2s;
 
   &--index {
     @media (min-width: variables.$desktop-width) {
@@ -61,14 +59,12 @@
 
   &:hover {
     @media (min-width: variables.$tablet-width) {
-      transition: all 0.2s;
       opacity: 0.6;
     }
   }
 
   &:active {
     @media (min-width: variables.$tablet-width) {
-      transition: all 0.2s;
       opacity: 0.3;
     }
   }
