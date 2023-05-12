@@ -18,6 +18,10 @@
       left: 0;
       top: 80px;
     }
+
+    @media (min-width: variables.$desktop-width) {
+      top: 95px;
+    }
   }
 
   @media (min-width: variables.$tablet-width) {
@@ -25,7 +29,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding-bottom: 80px;
+    padding-top: 73px;
+    padding-bottom: 85px;
   }
 }
 
@@ -147,7 +152,7 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-      padding: 10px 0;
+      padding: 11px 0;
     }
   }
 

@@ -51,8 +51,8 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-      top: -35px;
-      left: 0;
+      top: -31px;
+      left: 31px;
       width: 100px;
       height: 100px;
     }
@@ -77,8 +77,8 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-      top: -40px;
-      left: 15px;
+      top: -37px;
+      left: 47px;
       width: 70px;
       height: 97px;
       background-size: 70px 97px;
@@ -102,8 +102,8 @@
       }
 
       @media (min-width: variables.$desktop-width) {
-        top: -15px;
-        left: -20px;
+        top: -10px;
+        left: 15px;
         width: 134px;
         height: 56px;
         background-size: 134px 56px;
@@ -118,8 +118,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    text-align: center;
-    margin-bottom: 60px;
+    padding-left: 194px;
+    margin-bottom: 72px;
   }
 }
 
@@ -128,6 +128,7 @@
   margin: 0;
   padding-bottom: 23px;
   border-bottom: 1px solid variables.$color-border-third;
+  margin-bottom: 19px;
 
   @media (min-width: variables.$tablet-width) {
     border-bottom: none;
@@ -138,6 +139,8 @@
 
   @media (min-width: variables.$desktop-width) {
     width: 457px;
+    padding-left: 32px;
+    padding-bottom: 9px;
   }
 }
 
@@ -151,33 +154,41 @@
   text-transform: uppercase;
   color: variables.$color-title;
   text-decoration: none;
-  margin-top: 19px;
 
   &::after {
     content: "";
     position: absolute;
-    top: 3px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 100px;
     width: 24px;
     height: 12px;
     background-image: url("./../img/icon-arrow.svg");
     background-size: 18px 12px;
     background-repeat: no-repeat;
+    transition: all 0.2s;
+
+    @media (min-width: variables.$desktop-width) {
+      left: 161px;
+    }
   }
 
   &:hover::after {
-    transition: all 0.2s;
     background-size: 24px 12px;
   }
 
   &:active::after {
-    transition: all 0.2s;
     background-size: 24px 12px;
     opacity: 0.3;
   }
 
   &:active {
-    transition: all 0.2s;
     opacity: 0.3;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 32px;
   }
 }

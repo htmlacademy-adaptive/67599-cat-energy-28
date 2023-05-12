@@ -1,16 +1,42 @@
 @use "../variables.scss";
-@use "../mixins.scss";
 
 .social {
-  @include mixins.list-style;
-  padding: 20px 0;
+  padding: 28px 0;
   background-color: variables.$color-background-second;
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 53px;
 }
 
 .social__link {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: variables.$color-border;
+    width: 29px;
+    height: 22px;
+    top: 50%;
+    left: -14px;
+    transform: translateY(-50%);
+    transition: all 0.2s;
+
+    @media (min-width: variables.$desktop-width) {
+      left: 0;
+    }
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: variables.$color-background;
+  }
+
+  &:active::after {
+    color: variables.$color-background;
+    opacity: 0.3;
+  }
+
   &:focus {
     outline: none;
   }
@@ -18,22 +44,16 @@
   &:focus .social__icon {
     color: variables.$color-background;
   }
-}
 
-.social__icon {
-  width: 29px;
-  height: 22px;
-  color: variables.$color-border;
-
-  &:hover,
-  &:focus {
-    transition: all 0.2s;
-    color: variables.$color-background;
+  &--telegram::after {
+    mask-image: url("../img/sprites/stack.svg#icon-telegram");
   }
 
-  &:active {
-    transition: all 0.2s;
-    color: variables.$color-background;
-    opacity: 0.3;
+  &--youtube::after {
+    mask-image: url("../img/sprites/stack.svg#icon-youtube");
+  }
+
+  &--vkontakte::after {
+    mask-image: url("../img/sprites/stack.svg#icon-vk");
   }
 }

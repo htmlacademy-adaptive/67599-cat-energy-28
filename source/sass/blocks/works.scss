@@ -2,14 +2,14 @@
 @use "../mixins.scss";
 
 .works {
-  padding: 20px;
+  padding: 27px 20px;
 
   @media (min-width: variables.$tablet-width) {
     padding: 20px 0;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 70px 0 200px;
+    padding: 53px 0 160px;
   }
 }
 
@@ -25,7 +25,7 @@
   @media (min-width: variables.$tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 180px;
+    margin-bottom: 184px;
   }
 }
 
@@ -42,7 +42,7 @@
 
   @media (min-width: variables.$desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 94px;
+    gap: 80px;
   }
 }
 
@@ -66,7 +66,7 @@
     @media (min-width: variables.$tablet-width) {
       width: 80px;
       height: 80px;
-      top: -120px;
+      top: -112px;
     }
   }
 
@@ -127,6 +127,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 230px;
+    width: 242px;
+    margin-bottom: 98px;
   }
 }

@@ -1,7 +1,7 @@
 @use "../variables.scss";
 
 .developer {
-  padding: 20px 0 30px;
+  padding: 29px 0 30px;
   background-color: variables.$color-background-second;
 
   @media (min-width: variables.$tablet-width) {
@@ -11,6 +11,7 @@
 }
 
 .developer__link {
+  position: relative;
   font-size: 16px;
   line-height: 19px;
   color: variables.$color-text;
@@ -19,16 +20,28 @@
   justify-content: space-between;
   align-items: center;
   gap: 27px;
+  padding-right: 54px;
 
-  &:hover .developer__image,
-  &:focus .developer__image {
+  &::after {
+    position: absolute;
+    content: "";
+    mask-image: url("../img/sprites/stack.svg#icon-developer");
+    background-color: variables.$color-border;
+    width: 42px;
+    height: 55px;
+    top: 50%;
+    right: -7px;
+    transform: translateY(-50%);
     transition: all 0.2s;
-    color: variables.$color-background;
   }
 
-  &:active .developer__image {
-    transition: all 0.2s;
-    color: variables.$color-background;
+  &:hover::after,
+  &:focus::after {
+    background-color: variables.$color-background;
+  }
+
+  &:active::after {
+    background-color: variables.$color-background;
     opacity: 0.3;
   }
 
@@ -39,10 +52,4 @@
   &:focus .social__icon {
     color: variables.$color-background;
   }
-}
-
-.developer__image {
-  width: 27px;
-  height: 34px;
-  color: variables.$color-border;
 }
