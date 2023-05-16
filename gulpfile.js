@@ -8,10 +8,10 @@ import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-//import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
 import { stacksvg } from "gulp-stacksvg";
+import htmlmin from 'gulp-htmlmin';
 
 
 // Styles
@@ -31,12 +31,14 @@ export const styles = () => {
 // HTML
 const html = () => {
   return gulp.src('source/**/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('build'));
 }
 
 // Scripts
 const scripts = () => {
   return gulp.src('source/js/*.js')
+    .pipe(terser())
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
@@ -70,23 +72,16 @@ const svg = (done) => {
     .pipe(gulp.dest('build/img'));
     done();
 }
-/*
- const sprite = () => {
-    return gulp.src('source/img/icons/*.svg')
-    .pipe(svgo())
-    .pipe(svgstore({
-      inlineSvg: true
-      }))
-    .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'));
-    }*/
 
+// Sprite
 const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
+    .pipe(svgo())
     .pipe(stacksvg({ output: `sprites/stack` })) // sprites/stack - папка и файл, куда выводить спрайт.
     .pipe(gulp.dest(`build/img`))
 }
 
+// Copy
 const copy = (done) => {
   gulp.src([
     'source/fonts/**/*.{woff2,woff}',
