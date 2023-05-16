@@ -1,13 +1,5 @@
 @use "../variables.scss";
 
-.target {
-  padding: 0 20px;
-
-  @media (min-width: variables.$tablet-width) {
-    padding: 0;
-  }
-}
-
 .target-card {
   box-sizing: border-box;
   padding: 30px 20px 18px;

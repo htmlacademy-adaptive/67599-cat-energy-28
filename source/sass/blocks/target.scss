@@ -1,6 +1,12 @@
 @use "../variables.scss";
 
 .target {
+  padding: 0 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0;
+  }
+
   @media (min-width: variables.$desktop-width) {
     display: flex;
     gap: 80px;
