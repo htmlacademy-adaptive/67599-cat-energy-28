@@ -25,6 +25,16 @@
   }
 }
 
+.logo__text {
+  width: 128px;
+  height: 24px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 142px;
+    height: 26px;
+  }
+}
+
 .logo__image {
   width: 191px;
   height: 37px;

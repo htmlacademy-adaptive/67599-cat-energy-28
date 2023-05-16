@@ -8,6 +8,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
+    padding-top: 70px;
     padding-bottom: 82px;
   }
 }
@@ -27,6 +28,10 @@
     font-size: 60px;
     line-height: 60px;
     padding-left: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 57px;
   }
 }
 
@@ -48,5 +53,9 @@
     font-size: 20px;
     line-height: 30px;
     padding-left: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 65px;
   }
 }
