@@ -30,7 +30,7 @@ export const styles = () => {
 
 // HTML
 const html = () => {
-  return gulp.src('source/**/*.html')
+  return gulp.src('source/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('build'));
 }
@@ -77,7 +77,7 @@ const svg = (done) => {
 const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
-    .pipe(stacksvg({ output: `sprites/stack` })) // sprites/stack - папка и файл, куда выводить спрайт.
+    .pipe(stacksvg({ output: `sprites/stack` }))
     .pipe(gulp.dest(`build/img`))
 }
 
@@ -135,8 +135,6 @@ export const build = gulp.series(
     scripts,
     sprite,
     svg,
-    copy,
-    optimizeImages,
     createWebp
   ),
 );
