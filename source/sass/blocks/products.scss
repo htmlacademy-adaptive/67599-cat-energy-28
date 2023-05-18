@@ -21,10 +21,12 @@
 
 .products__item {
   border-bottom: 1px solid variables.$color-border-eighth;
+  margin-bottom: 10px;
 
   @media (min-width: variables.$tablet-width) {
     border: 2px solid variables.$color-background-second;
     border-radius: 3px;
     background-color: variables.$color-background-second;
+    margin: 0;
   }
 }

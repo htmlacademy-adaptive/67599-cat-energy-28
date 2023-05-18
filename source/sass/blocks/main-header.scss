@@ -3,6 +3,7 @@
 .main-header {
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid variables.$color-border-second;
 
   @media (min-width: variables.$tablet-width) {
     flex-direction: row;
@@ -16,7 +17,8 @@
 }
 
 .main-header__logo {
-  border-bottom: 1px solid variables.$color-border-second;
+  width: 200px;
+  // border-bottom: 1px solid variables.$color-border-second;
 
   @media (min-width: variables.$tablet-width) {
     border: none;

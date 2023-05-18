@@ -4,7 +4,7 @@
   @media (min-width: variables.$tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr minmax(40px, auto);
+    grid-template-rows: minmax(48px, auto) minmax(55px, auto);
     align-items: center;
   }
 
@@ -24,7 +24,7 @@
   margin: 0;
 
   @media (min-width: variables.$tablet-width) {
-    margin-left: 40px;
+    margin-left: 37px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -61,7 +61,6 @@
 
   @media (min-width: variables.$tablet-width) {
     grid-column: 1 / 3;
-    width: 244px;
     margin: 0 40px;
   }
 
