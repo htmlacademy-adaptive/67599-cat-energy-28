@@ -9,6 +9,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border-bottom: none;
+    padding-top: 3px;
   }
 
   @media (min-width: variables.$desktop-width) {

@@ -20,4 +20,8 @@
 
 .target__item:not(:last-child) {
   margin-bottom: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 30px;
+  }
 }

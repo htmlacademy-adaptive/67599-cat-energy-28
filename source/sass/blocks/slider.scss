@@ -19,7 +19,7 @@
   height: 260px;
 
   @media (min-width: variables.$tablet-width) {
-    bottom: 100px;
+    bottom: 80px;
     width: 560px;
     height: 512px;
   }
@@ -76,7 +76,7 @@
   }
 
   @media (min-width: variables.$tablet-width) {
-    top: -100px;
+    top: -80px;
   }
 
   @media (min-width: variables.$desktop-width) {
