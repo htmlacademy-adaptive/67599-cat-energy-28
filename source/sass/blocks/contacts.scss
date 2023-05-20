@@ -9,6 +9,10 @@
   }
 }
 
+.contacts__wrapper {
+  background-color: variables.$color-background-second;
+}
+
 .contacts__data {
   padding: 24px 20px;
   display: flex;
