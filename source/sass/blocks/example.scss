@@ -1,6 +1,7 @@
 @use "../variables.scss";
 
 .example {
+  position: relative;
   padding: 25px 20px 40px;
   background-color: variables.$color-background-third;
 
@@ -10,7 +11,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    background-image: none;
+    background-image: linear-gradient(variables.$color-title-second 0%, variables.$color-background-third 0%);
+    padding: 100px 0 40px;
   }
 }
 
@@ -28,6 +30,9 @@
 
 .example__slider {
   @media (min-width: variables.$desktop-width) {
+    position: absolute;
+    top: -153px;
+    right: -25px;
     width: 50%;
   }
 }

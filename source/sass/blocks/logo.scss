@@ -10,6 +10,10 @@
   &--footer {
     padding: 40px 0 20px;
     justify-content: center;
+
+    @media (min-width: variables.$desktop-width) {
+      margin-right: 0;
+    }
   }
 
   @media (min-width: variables.$tablet-width) {
