@@ -9,9 +9,11 @@
 }
 
 .form__data {
+  margin-bottom: 26px;
+
   @media (min-width: variables.$desktop-width) {
     display: flex;
-    gap: 80px;
+    gap: 20px;
     height: 200px;
     margin-bottom: 70px;
   }
@@ -24,14 +26,16 @@
   display: grid;
 
   @media (min-width: variables.$tablet-width) {
-    width: 100%;
-    padding: 0;
+    width: 630px;
+    margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 60px;
+    gap: 27px;
   }
 
   @media (min-width: variables.$desktop-width) {
+    width: 100%;
+    padding: 0;
     grid-column: 1 / 3;
     gap: 87px;
   }
@@ -45,9 +49,14 @@
 
   @media (min-width: variables.$tablet-width) {
     margin: 0;
+    padding: 26px;
+    width: 284px;
+    font-size: 20px;
+    line-height: 0px;
   }
 
   @media (min-width: variables.$desktop-width) {
+    width: 100%;
     padding: 25px;
     font-size: 20px;
     line-height: 0px;
@@ -75,11 +84,13 @@
     border-top: 2px solid variables.$color-background-second;
     border-bottom: 2px solid variables.$color-background-second;
     padding: 20px 0;
-    margin-bottom: 26px;
+    margin-bottom: 7px;
 
     @media (min-width: variables.$tablet-width) {
-      border: 2px solid variables.$color-background-second;
-      margin-bottom: 70px;
+      border: none;
+      width: 630px;
+      margin: 0 auto;
+      margin-bottom: 82px;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -91,20 +102,22 @@
   }
 
   &--data {
+    margin-bottom: 11px;
+
     &::before {
       content: "";
       position: absolute;
       height: 2px;
       left: 220px;
       right: 0;
-      top: 55px;
+      top: 16px;
       background-color: variables.$color-background;
       z-index: 1;
 
       @media (min-width: variables.$tablet-width) {
         left: 0;
         right: 0;
-        top: 35px;
+        top: 15px;
       }
 
       @media (min-width: variables.$desktop-width) {
@@ -115,26 +128,36 @@
   }
 
   &--comment {
+    margin-bottom: 6px;
+
     &::before {
       content: "";
       position: absolute;
       height: 2px;
       left: 160px;
       right: 0;
-      top: 55px;
+      top: 15px;
       background-color: variables.$color-background;
       z-index: 1;
 
       @media (min-width: variables.$tablet-width) {
         left: 0;
         right: 0;
-        top: 35px;
+        top: 16px;
       }
 
       @media (min-width: variables.$desktop-width) {
         left: 0;
         top: 18px;
       }
+    }
+
+    @media (min-width: variables.$tablet-width) {
+      margin-bottom: 45px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      margin-bottom: 42px;
     }
   }
 
@@ -145,14 +168,14 @@
       height: 2px;
       left: 180px;
       right: 0;
-      top: 55px;
+      top: 13px;
       background-color: variables.$color-background;
       z-index: 1;
 
       @media (min-width: variables.$tablet-width) {
         left: 0;
         right: 0;
-        top: 35px;
+        top: 17px;
       }
 
       @media (min-width: variables.$desktop-width) {
@@ -164,10 +187,17 @@
 }
 
 .form__remark {
+  text-align: center;
   margin: 0;
 
-  @media (min-width: variables.$desktop-width) {
+  @media (min-width: variables.$tablet-width) {
+    text-align: left;
     font-size: 16px;
     line-height: 16px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    // font-size: 16px;
+    // line-height: 16px;
   }
 }
