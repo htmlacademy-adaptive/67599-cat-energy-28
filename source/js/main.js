@@ -2,6 +2,8 @@ const buttonMenuClose = document.querySelector('.main-nav__open');
 const menu = document.querySelector('.site-list');
 const map = document.querySelector('.contacts__map');
 
+buttonMenuClose.style.display='block';
+
 // Если JS подключен меню закрывается
 if (menu.classList.contains('main-nav__list')) {
   menu.classList.remove('main-nav__list');
