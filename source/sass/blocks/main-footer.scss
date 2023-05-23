@@ -38,4 +38,9 @@
   @media (min-width: variables.$tablet-width) {
     border: none;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    border: none;
+    transform: translateX(-14px);
+  }
 }

@@ -33,21 +33,21 @@
   }
 
   &--additional {
-    margin-bottom: 23px;
+    margin-bottom: 19px;
 
     @media (min-width: variables.$tablet-width) {
       grid-template-columns: repeat(2, 1fr);
       gap: 12px 60px;
       width: 630px;
       margin: 0 auto;
-      margin-bottom: 36px;
+      margin-bottom: 38px;
     }
 
     @media (min-width: variables.$desktop-width) {
       width: 100%;
       grid-template-columns: repeat(4, 1fr);
       grid-auto-rows: auto;
-      margin-bottom: 49px;
+      margin-bottom: 45px;
       column-gap: 80px;
     }
   }
@@ -69,7 +69,7 @@
 
   &--target {
     padding-top: 21px;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
 
     @media (min-width: variables.$tablet-width) {
       border: 2px solid variables.$color-background-second;
@@ -86,7 +86,8 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 11px;
+  margin: 0;
+  margin-bottom: 12px;
 
   @media (min-width: variables.$tablet-width) {
     margin-bottom: 16px;
@@ -169,7 +170,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: variables.$color-text;
-  padding: 14px 18px;
+  padding: 13px 18px;
   width: 100%;
   border: 1px solid variables.$color-border-input;
   transition: all 0.2s;

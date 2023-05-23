@@ -4,16 +4,12 @@
 .logo {
   display: flex;
   align-items: center;
-  padding: 14px 0 10px 20px;
+  padding: 12px 0 10px 20px;
   transition: all 0.2s;
 
   &--footer {
     padding: 40px 0 20px;
     justify-content: center;
-
-    @media (min-width: variables.$desktop-width) {
-      // margin-right: 0;
-    }
   }
 
   @media (min-width: variables.$tablet-width) {

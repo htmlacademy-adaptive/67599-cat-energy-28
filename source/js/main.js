@@ -1,4 +1,4 @@
-const buttonMenuClose = document.querySelector('.main-nav__close');
+const buttonMenuClose = document.querySelector('.main-nav__open');
 const menu = document.querySelector('.site-list');
 const map = document.querySelector('.contacts__map');
 
@@ -29,4 +29,3 @@ buttonMenu.addEventListener('click', function() {
 
 // Map
 map.style.display = 'block';
-

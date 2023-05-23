@@ -6,9 +6,8 @@
   @media (min-width: variables.$desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     min-height: 200px;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
 }
 
@@ -39,20 +38,18 @@
   width: 100%;
   padding: 10px;
   margin-bottom: 21px;
+  line-height: 24px;
 
   @media (min-width: variables.$tablet-width) {
     margin: 0;
-    padding: 26px;
+    padding: 14px;
     width: 284px;
     font-size: 20px;
-    line-height: 0px;
   }
 
   @media (min-width: variables.$desktop-width) {
     width: 100%;
-    padding: 25px;
     font-size: 20px;
-    line-height: 0px;
   }
 }
 
@@ -65,11 +62,12 @@
   &--about {
     @media (min-width: variables.$tablet-width) {
       padding: 0;
-      margin-bottom: 50px;
+      margin-bottom: 54px;
     }
 
     @media (min-width: variables.$desktop-width) {
       width: 45%;
+      margin-bottom: 0;
     }
   }
 
@@ -83,7 +81,7 @@
       border: none;
       width: 630px;
       margin: 0 auto;
-      margin-bottom: 82px;
+      margin-bottom: 77px;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -91,6 +89,7 @@
       padding: 25px 0;
       min-height: 200px;
       box-sizing: border-box;
+      margin-bottom: 0;
     }
   }
 
@@ -117,6 +116,14 @@
         left: 0;
         top: 18px;
       }
+    }
+
+    @media (min-width: variables.$tablet-width) {
+      margin-bottom: 16px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      margin-bottom: 10px;
     }
   }
 
@@ -146,7 +153,7 @@
     }
 
     @media (min-width: variables.$tablet-width) {
-      margin-bottom: 45px;
+      margin-bottom: 41px;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -187,5 +194,10 @@
     text-align: left;
     font-size: 16px;
     line-height: 16px;
+    padding-left: 16px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-left: 0;
   }
 }
