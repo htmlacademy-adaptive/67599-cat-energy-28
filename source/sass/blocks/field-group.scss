@@ -2,11 +2,7 @@
 @use "../mixins.scss";
 
 .field-group {
-  padding: 20px;
-
-  @media (min-width: variables.$tablet-width) {
-    padding: 20px 0;
-  }
+  padding: 0 20px;
 
   @media (min-width: variables.$desktop-width) {
     padding: 0;
@@ -16,13 +12,20 @@
 .field-group__list {
   @include mixins.list-style;
   display: grid;
-  grid-auto-rows: minmax(50px, auto);
+  grid-auto-rows: auto;
   box-sizing: border-box;
 
   &--contacts {
+    @media (min-width: variables.$tablet-width) {
+      width: 630px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+
     @media (min-width: variables.$desktop-width) {
+      width: 100%;
       margin: 0;
-      margin-bottom: 72px;
+      margin-bottom: 46px;
       grid-template-columns: repeat(2, 1fr);
       gap: 80px;
       align-items: center;
@@ -30,33 +33,51 @@
   }
 
   &--additional {
+    margin-bottom: 19px;
+
     @media (min-width: variables.$tablet-width) {
       grid-template-columns: repeat(2, 1fr);
+      gap: 12px 60px;
+      width: 630px;
+      margin: 0 auto;
+      margin-bottom: 38px;
     }
 
     @media (min-width: variables.$desktop-width) {
+      width: 100%;
       grid-template-columns: repeat(4, 1fr);
       grid-auto-rows: auto;
-      margin-bottom: 65px;
-      column-gap: 95px;
+      margin-bottom: 45px;
+      column-gap: 80px;
     }
   }
 
   &--data {
+    margin-bottom: 12px;
+
+    @media (min-width: variables.$tablet-width) {
+      width: 630px;
+      margin: 0 auto;
+      margin-bottom: 4px;
+    }
+
     @media (min-width: variables.$desktop-width) {
-      row-gap: 23px;
+      row-gap: 7px;
+      padding-right: 60px;
     }
   }
 
   &--target {
+    padding-top: 21px;
+    padding-bottom: 7px;
+
     @media (min-width: variables.$tablet-width) {
-      padding: 0 40px;
+      border: 2px solid variables.$color-background-second;
+      padding: 23px 27px;
     }
 
     @media (min-width: variables.$desktop-width) {
       row-gap: 2px;
-      margin-top: 20px;
-      padding: 0 27px;
     }
   }
 }
@@ -65,14 +86,19 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 14px;
+  margin: 0;
+  margin-bottom: 12px;
 
   @media (min-width: variables.$tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin: 0;
+    margin-bottom: 11px;
+  }
+
+  &--target {
+    margin-bottom: 13px;
   }
 
   &--advice {
@@ -90,22 +116,31 @@
   text-transform: uppercase;
   white-space: nowrap;
   color: variables.$color-text;
-  margin-right: 13px;
+  margin-right: 17px;
 
   @media (min-width: variables.$tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 20px;
   }
 
   @media (min-width: variables.$desktop-width) {
     margin-right: 20px;
+  }
+
+  &--contacts {
+    margin-right: 10px;
+
+    @media (min-width: variables.$tablet-width) {
+      margin-right: 23px;
+    }
   }
 }
 
 .field-group__email::after {
   position: absolute;
   content: "";
-  right: 20px;
+  right: 15px;
   width: 20px;
   height: 20px;
   top: 50%;
@@ -118,7 +153,7 @@
 .field-group__phone::after {
   position: absolute;
   content: "";
-  right: 20px;
+  right: 15px;
   width: 20px;
   height: 20px;
   top: 50%;
@@ -135,7 +170,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: variables.$color-text;
-  padding: 14px 20px;
+  padding: 13px 18px;
   width: 100%;
   border: 1px solid variables.$color-border-input;
   transition: all 0.2s;
@@ -173,19 +208,23 @@
     box-sizing: border-box;
     padding: 9px 15px;
     resize: none;
-    width: 100%;
     min-height: 150px;
     margin: 0 auto;
 
     @media (min-width: variables.$tablet-width) {
       min-height: 174px;
+      width: 630px;
       font-size: 20px;
       line-height: 30px;
     }
 
     @media (min-width: variables.$desktop-width) {
-      margin-bottom: 40px;
+      width: 100%;
     }
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 11px 18px;
   }
 }
 
@@ -196,6 +235,7 @@
   font-size: 24px;
   line-height: 26px;
   color: variables.$color-title;
+  margin: 0;
   margin-bottom: 35px;
   background-color: variables.$color-title-second;
   width: 190px;
@@ -206,12 +246,12 @@
     font-size: 36px;
     padding: 0 40px;
     margin: 0;
-    margin-bottom: 75px;
-    transform: translateX(-40px);
+    margin-bottom: 80px;
   }
 
   @media (min-width: variables.$desktop-width) {
     margin-bottom: 83px;
+    transform: translateX(-40px);
   }
 
   &--data {
@@ -221,8 +261,11 @@
   }
 
   &--comment {
+    margin-bottom: 37px;
+
     @media (min-width: variables.$tablet-width) {
       width: 182px;
+      margin-bottom: 80px;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -231,12 +274,15 @@
   }
 
   &--additional {
+    margin-bottom: 35px;
+
     @media (min-width: variables.$tablet-width) {
       width: 211px;
+      margin-bottom: 63px;
     }
 
     @media (min-width: variables.$desktop-width) {
-      margin-bottom: 68px;
+      margin-bottom: 64px;
     }
   }
 }

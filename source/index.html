@@ -5,9 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/oswald/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <title>Кэт энерджи</title>
 </head>
 
@@ -20,9 +23,10 @@
             class="logo__image" src="./img/logo-mobile.svg" width="191" height="37" alt="Логотип «Кэт энерджи».">
         </picture>
       </a>
-      <nav class="main-nav"><button class="main-nav__close" type="button"><span class="visually-hidden">Открыть
+      <nav class="main-nav"><button class="main-nav__open" type="button"><span
+            class="visually-hidden">Открыть
             меню.</span></button>
-        <ul class="site-list">
+        <ul class="site-list main-nav__mobile">
           <li class="site-list__item"><a
               class="site-list__link site-list__link--index site-list__link--index-active">Главная</a></li>
           <li class="site-list__item"><a class="site-list__link site-list__link--index" href="catalog.html">Каталог
@@ -131,12 +135,12 @@
               <picture>
                 <source media="(min-width: 769px)" type="image/webp"
                   srcset="./img/after-tablet.webp, ./img/after-tablet@2x.webp 2x" width="560" height="512">
-                <source type="image/webp" srcset="./img/after-mobile.webp, ./img/after-mobile@2x.webp 2x"
-                  width="280" height="256">
+                <source type="image/webp" srcset="./img/after-mobile.webp, ./img/after-mobile@2x.webp 2x" width="280"
+                  height="256">
                 <source media="(min-width: 769px)" width="560" height="512"
                   srcset="./img/after-tablet.png, ./img/after-tablet@2x.png 2x">
                 <img class="slider__after" width="280" height="256" src="./img/after-mobile.png"
-                  srcset="./img/after-mobile@2x.png 2x" alt="Толстый кот.">
+                  srcset="./img/after-mobile@2x.png 2x" alt="Худой кот.">
               </picture>
             </li>
           </ul>
@@ -153,10 +157,27 @@
           <p class="contacts__invite">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <p class="contacts__address"><span>ул. Большая Конюшенная, д. 19/8</span> <span>Санкт-Петербург</span></p>
         </div>
-      </div><iframe class="contacts__map"
+      </div>
+      <iframe class="contacts__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8356051389692!2d30.317491999999998!3d59.9680504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1683015551035!5m2!1sru!2sru"
         width="800" height="600" style="border: 0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <noscript>
+        <picture>
+          <source media="(min-width: 1440px)" type="image/webp" width="1440" height="400"
+            srcset="./img/map-desktop.webp, ./img/map-desktop@2x.webp 2x">
+          <source media="(min-width: 769px)" type="image/webp" width="768" height="400"
+            srcset="./img/map-tablet.webp, ./img/map-tablet@2x.webp 2x">
+          <source type="image/webp" width="320" height="362" srcset="./img/map-mobile.webp, ./img/map-mobile@2x.webp 2x">
+          <source media="(min-width: 1440px)" width="1440" height="400"
+            srcset="./img/map-desktop.png, ./img/map-desktop@2x.png 2x">
+          <source media="(min-width: 769px)" width="768" height="400"
+            srcset="./img/map-tablet.png, ./img/map-tablet.png@2x.png 2x">
+          <img class="contacts__map-nojs" width="320" height="362" src="./img/map-mobile.png"
+            srcset="./img/map-mobile.png@2x.png 2x" alt="Карта.">
+        </picture>
+      </noscript>
     </section>
     <div class="main-footer__wrapper page__container">
       <a class="main-footer__logo logo logo--footer">

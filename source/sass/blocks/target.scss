@@ -9,6 +9,7 @@
 
   @media (min-width: variables.$desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     gap: 80px;
   }
 }
@@ -19,5 +20,9 @@
 }
 
 .target__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 30px;
+  }
 }

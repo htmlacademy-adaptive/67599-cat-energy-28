@@ -2,6 +2,7 @@
 @use "../mixins.scss";
 
 .case {
+  position: relative;
   padding: 0;
 
   @media (min-width: variables.$tablet-width) {
@@ -11,7 +12,7 @@
 
   @media (min-width: variables.$desktop-width) {
     background-color: variables.$color-background-third;
-    padding-bottom: 75px;
+    padding-bottom: 0;
   }
 }
 
@@ -28,30 +29,32 @@
   @media (min-width: variables.$tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    position: relative;
-    top: -135px;
+    position: absolute;
+    top: -235px;
+    // margin-bottom: 38px;
   }
 }
 
 .case__description {
   color: variables.$color-text;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
   @media (min-width: variables.$tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: variables.$desktop-width) {
     width: 436px;
     position: relative;
     top: -30px;
-    margin-bottom: 45px;
+    margin-bottom: 39px;
   }
 }
 
@@ -65,7 +68,7 @@
   @media (min-width: variables.$desktop-width) {
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
+    gap: 25px;
   }
 }
 
@@ -89,9 +92,10 @@
   @media (min-width: variables.$tablet-width) {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     gap: 9px;
     font-size: 20px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: variables.$desktop-width) {

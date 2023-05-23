@@ -3,7 +3,11 @@
 .result {
   display: flex;
   justify-content: center;
-  gap: 42px;
+  gap: 32px;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 40px;
+  }
 }
 
 .result__border {
@@ -23,7 +27,7 @@
   top: 20px;
 
   @media (min-width: variables.$tablet-width) {
-    top: 7px;
+    top: 17px;
   }
 }
 
@@ -39,6 +43,7 @@
   @media (min-width: variables.$tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    margin-bottom: 17px;
   }
 }
 
@@ -54,6 +59,8 @@
   background-color: variables.$color-background-third;
 
   @media (min-width: variables.$tablet-width) {
+    position: relative;
+    top: -10px;
     display: inline;
     padding: 0 10px;
     font-size: 14px;

@@ -1,12 +1,14 @@
-const buttonMenuClose = document.querySelector('.main-nav__close');
-// const menu = document.querySelector('.main-nav__list');
+const buttonMenuClose = document.querySelector('.main-nav__open');
 const menu = document.querySelector('.site-list');
+const map = document.querySelector('.contacts__map');
 
 // Если JS подключен меню закрывается
 if (menu.classList.contains('main-nav__list')) {
   menu.classList.remove('main-nav__list');
+
 } else {
   menu.classList.add('main-nav__list');
+
 }
 
 if (menu.classList.contains('main-nav__list--close')) {
@@ -24,3 +26,6 @@ buttonMenu.addEventListener('click', function() {
   buttonMenu.classList.toggle('main-nav__open');
   buttonMenu.classList.toggle('main-nav__close');
 });
+
+// Map
+map.style.display = 'block';

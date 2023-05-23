@@ -1,4 +1,5 @@
 @use "../variables.scss";
+@use "../mixins.scss";
 
 .site-list {
   @media (min-width: variables.$tablet-width) {
@@ -15,9 +16,21 @@
   }
 }
 
+.main-nav__mobile {
+  @include mixins.list-style;
+}
+
 .site-list__item {
   text-decoration: none;
   border-bottom: 1px solid variables.$color-border-second;
+
+  @media (min-width: variables.$tablet-width) {
+    border: none;
+  }
+}
+
+.site-list__item:first-child {
+  border-top: 1px solid variables.$color-border-second;
 
   @media (min-width: variables.$tablet-width) {
     border: none;
@@ -28,7 +41,7 @@
   display: block;
   text-decoration: none;
   color: variables.$color-title;
-  padding: 22px 0;
+  padding: 24px 0;
   transition: all 0.2s;
 
   &--index {
@@ -54,7 +67,12 @@
   }
 
   @media (min-width: variables.$tablet-width) {
-    padding: 8px 0;
+    padding: 7px 0;
+  }
+
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 6px 0;
   }
 
   &:hover {

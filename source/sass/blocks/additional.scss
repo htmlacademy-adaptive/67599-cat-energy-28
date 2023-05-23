@@ -3,29 +3,30 @@
 
 .additional {
   position: relative;
-  padding: 25px 0 0;
+  padding: 12px 0 0;
 
   &::before {
     content: "";
     position: absolute;
     height: 2px;
-    left: 265px;
+    left: 268px;
     right: 0;
-    top: 40px;
+    top: 27px;
     background-color: variables.$color-background;
 
     @media (min-width: variables.$tablet-width) {
       left: 0;
-      top: 80px;
+      top: 87px;
     }
 
     @media (min-width: variables.$desktop-width) {
-      top: 95px;
+      top: 97px;
     }
   }
 
   @media (min-width: variables.$tablet-width) {
-    padding-top: 60px;
+    padding-top: 68px;
+    padding-bottom: 38px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -84,15 +85,16 @@
   line-height: 24px;
   color: variables.$color-title;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
   padding: 0 20px;
 
   @media (min-width: variables.$tablet-width) {
-    width: 345px;
+    width: 340px;
     background-color: variables.$color-title-second;
     font-size: 36px;
     line-height: 36px;
-    padding: 0 40px;
+    padding: 0 36px;
+    margin-bottom: 77px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -111,7 +113,8 @@
     border: 2px solid variables.$color-background-second;
     border-radius: 3px;
     padding: 0;
-    padding-bottom: 10px;
+    padding-bottom: 18px;
+    margin-bottom: 72px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -128,12 +131,12 @@
 }
 
 .additional__item {
-  margin-bottom: 19px;
-  padding-bottom: 20px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
   border-bottom: 1px solid variables.$color-border-fifth;
 
   &:first-child {
-    padding-top: 20px;
+    padding-top: 15px;
     border-top: 1px solid variables.$color-border-fifth;
 
     @media (min-width: variables.$tablet-width) {
@@ -145,9 +148,21 @@
     }
   }
 
+  &:last-child {
+    margin-bottom: 55px;
+
+    @media (min-width: variables.$tablet-width) {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      padding-bottom: 11px;
+    }
+  }
+
   &:not(:last-child) {
     @media (min-width: variables.$tablet-width) {
-      padding-bottom: 28px;
       border-bottom: 2px solid variables.$color-background-second;
     }
 
@@ -157,7 +172,8 @@
   }
 
   @media (min-width: variables.$tablet-width) {
-    padding: 0;
+    padding: 17px 0 17px;
+    margin: 0;
     border: none;
   }
 

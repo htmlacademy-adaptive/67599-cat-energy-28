@@ -4,6 +4,8 @@
 .products__list {
   @include mixins.list-style;
 
+  padding-top: 21px;
+
   @media (min-width: variables.$tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -14,17 +16,27 @@
   @media (min-width: variables.$desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(431px, auto);
-    row-gap: 137px;
+    row-gap: 142px;
     column-gap: 80px;
   }
 }
 
 .products__item {
   border-bottom: 1px solid variables.$color-border-eighth;
+  margin-bottom: 50px;
 
   @media (min-width: variables.$tablet-width) {
     border: 2px solid variables.$color-background-second;
     border-radius: 3px;
     background-color: variables.$color-background-second;
+    margin: 0;
+  }
+}
+
+.products__item:last-child {
+  margin-bottom: 10px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin: 0;
   }
 }

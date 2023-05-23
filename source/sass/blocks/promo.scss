@@ -2,10 +2,10 @@
 
 .promo {
   position: relative;
-  padding: 18px 20px;
+  padding: 27px 20px 20px;
   color: variables.$color-title-second;
   background-image: url("../img/background/promo-mobile.jpg"), linear-gradient(variables.$color-background, variables.$color-background);
-  background-size: auto 295px;
+  background-size: auto 300px;
   background-position: top;
   background-repeat: no-repeat;
   text-align: center;
@@ -18,12 +18,13 @@
     background-image: none;
     color: variables.$color-title;
     padding: 0;
-    padding-top: 64px;
+    padding-top: 57px;
     text-align: left;
   }
 
   @media (min-width: variables.$desktop-width) {
     padding-top: 108px;
+    padding-left: 160px;
   }
 
   &::before {
@@ -48,7 +49,7 @@
 
 .promo__block {
   @media (min-width: variables.$desktop-width) {
-    min-height: 560px;
+    min-height: 550px;
   }
 }
 
@@ -58,14 +59,18 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 
   @media (min-width: variables.$tablet-width) {
     width: 420px;
     font-size: 60px;
     line-height: 60px;
-    padding-left: 80px;
+    padding-left: 87px;
     margin-bottom: 40px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0;
   }
 }
 
@@ -81,8 +86,14 @@
   @media (min-width: variables.$tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    padding-left: 80px;
+    padding-left: 89px;
     margin-bottom: 20px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 283px;
+    padding: 0;
+    margin-bottom: 50px;
   }
 }
 
@@ -97,8 +108,8 @@
 
   @media (min-width: variables.$desktop-width) {
     position: absolute;
-    top: -80px;
-    left: 450px;
+    top: -83px;
+    left: 368px;
     display: block;
     width: 552px;
     height: 499px;
@@ -108,13 +119,17 @@
 
 .promo__button {
   display: block;
-  padding: 13px;
+  padding: 10px;
   box-sizing: border-box;
 
   @media (min-width: variables.$tablet-width) {
     width: 244px;
     position: absolute;
     top: 232px;
-    left: 80px;
+    left: 90px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    position: static;
   }
 }

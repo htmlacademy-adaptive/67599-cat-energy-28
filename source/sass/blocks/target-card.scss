@@ -10,6 +10,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
+    width: 570px;
     padding-top: 70px;
   }
 }
@@ -29,21 +30,21 @@
     content: "";
     position: absolute;
     top: -5px;
-    left: 0;
+    left: 2px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: variables.$color-background;
 
     @media (min-width: variables.$tablet-width) {
-      top: 0;
-      left: 400px;
+      top: 60px;
+      left: 427px;
       width: 200px;
       height: 200px;
     }
 
     @media (min-width: variables.$desktop-width) {
-      top: -31px;
+      top: -22px;
       left: 31px;
       width: 100px;
       height: 100px;
@@ -53,23 +54,23 @@
   &::after {
     content: "";
     position: absolute;
-    top: -12px;
-    left: 5px;
+    top: -9px;
+    left: 9px;
     width: 36px;
     height: 50px;
     background-image: url("./../img/cat-slim.svg");
     background-repeat: no-repeat;
 
     @media (min-width: variables.$tablet-width) {
-      top: 0;
-      left: 435px;
+      top: 47px;
+      left: 456px;
       width: 140px;
       height: 194px;
       background-size: 140px 194px;
     }
 
     @media (min-width: variables.$desktop-width) {
-      top: -37px;
+      top: -29px;
       left: 47px;
       width: 70px;
       height: 97px;
@@ -79,22 +80,22 @@
 
   &--pro {
     &::after {
-      top: 5px;
-      left: -10px;
+      top: 6px;
+      left: -6px;
       width: 68px;
       height: 28px;
       background-image: url("./../img/cat-pro.svg");
 
       @media (min-width: variables.$tablet-width) {
-        top: 52px;
-        left: 370px;
+        top: 103px;
+        left: 393px;
         width: 268px;
         height: 112px;
         background-size: 268px 112px;
       }
 
       @media (min-width: variables.$desktop-width) {
-        top: -10px;
+        top: -3px;
         left: 15px;
         width: 134px;
         height: 56px;
@@ -107,10 +108,13 @@
     font-size: 36px;
     line-height: 36px;
     text-align: left;
+    padding: 45px 0 0 32px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: variables.$desktop-width) {
     padding-left: 194px;
+    padding-top: 8px;
     margin-bottom: 72px;
   }
 }
@@ -127,12 +131,14 @@
     width: 340px;
     font-size: 16px;
     line-height: 24px;
+    padding-left: 32px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: variables.$desktop-width) {
     width: 457px;
     padding-left: 32px;
-    padding-bottom: 9px;
+    margin-bottom: 5px;
   }
 }
 
@@ -160,6 +166,10 @@
     background-repeat: no-repeat;
     transition: all 0.2s;
 
+    @media (min-width: variables.$tablet-width) {
+      left: 165px;
+    }
+
     @media (min-width: variables.$desktop-width) {
       left: 161px;
     }
@@ -176,6 +186,12 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding-left: 32px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: variables.$desktop-width) {

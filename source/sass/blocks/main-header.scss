@@ -2,12 +2,14 @@
 
 .main-header {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 
   @media (min-width: variables.$tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 3px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -16,7 +18,7 @@
 }
 
 .main-header__logo {
-  border-bottom: 1px solid variables.$color-border-second;
+  width: 200px;
 
   @media (min-width: variables.$tablet-width) {
     border: none;
