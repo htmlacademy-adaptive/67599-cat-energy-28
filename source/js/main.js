@@ -1,5 +1,6 @@
 const buttonMenuClose = document.querySelector('.main-nav__close');
 const menu = document.querySelector('.site-list');
+const map = document.querySelector('.contacts__map');
 
 // Если JS подключен меню закрывается
 if (menu.classList.contains('main-nav__list')) {
@@ -25,3 +26,7 @@ buttonMenu.addEventListener('click', function() {
   buttonMenu.classList.toggle('main-nav__open');
   buttonMenu.classList.toggle('main-nav__close');
 });
+
+// Map
+map.style.display = 'block';
+

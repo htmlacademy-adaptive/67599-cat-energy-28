@@ -1,12 +1,6 @@
 @use "../variables.scss";
 @use "../mixins.scss";
 
-.slider {
-  @media (min-width: variables.$desktop-width) {
-    // background-color: variables.$color-background-third;
-  }
-}
-
 .slider__list {
   @include mixins.list-style;
   position: relative;
