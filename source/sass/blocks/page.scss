@@ -16,6 +16,10 @@
 
 .page__main {
   flex-grow: 1;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-bottom: 41px;
+  }
 }
 
 .page__container {
