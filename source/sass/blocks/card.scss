@@ -7,7 +7,7 @@
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: 1fr;
-    grid-template-rows: 160px 60px 1fr minmax(40px, auto);
+    grid-template-rows: 160px minmax(60px, auto) 1fr minmax(40px, auto);
     padding: 0;
     padding-bottom: 40px;
   }
@@ -38,7 +38,10 @@
     align-self: center;
 
     @media (min-width: variables.$tablet-width) {
+      position: relative;
       top: -84px;
+      grid-column: 1;
+      grid-row: 1/2;
     }
   }
 

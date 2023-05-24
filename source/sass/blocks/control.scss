@@ -83,6 +83,11 @@
   opacity: 0.3;
 }
 
+.control__input[type="radio"]:disabled ~ .control__label,
+.control__input[type="radio"]:disabled:hover ~ .control__label {
+  opacity: 0.3;
+}
+
 .control__input[type="checkbox"]:checked + .control__checkbox::before {
   position: absolute;
   content: "";
@@ -105,3 +110,13 @@
   border: 1px solid variables.$color-control-hover;
   opacity: 0.3;
 }
+
+.control__input[type="checkbox"]:disabled ~ .control__label,
+.control__input[type="checkbox"]:disabled:hover ~ .control__label {
+  opacity: 0.3;
+}
+
+.control__label--checkbox {
+  color: variables.$color-title;
+}
+
