@@ -56,6 +56,10 @@
     width: 24px;
     background-color: variables.$color-title;
     border: none;
+
+    @media (min-width: variables.$tablet-width) {
+      background-color: transparent;
+    }
   }
 
   &::before {
@@ -67,10 +71,14 @@
     width: 24px;
     background-color: variables.$color-title;
     border: none;
+
+    @media (min-width: variables.$tablet-width) {
+      background-color: transparent;
+    }
   }
 
   @media (min-width: variables.$tablet-width) {
-    display: none;
+    background-color: transparent;
   }
 }
 
@@ -96,10 +104,14 @@
     background-color: variables.$color-title;
     border: none;
     transform: rotate(90deg);
+
+    @media (min-width: variables.$tablet-width) {
+      background-color: transparent;
+    }
   }
 
-  @media (min-width: variables.$tablet-width) {
-    display: none;
+  @media (min-width: variables.$desktop-width) {
+    background-color: transparent;
   }
 }
 

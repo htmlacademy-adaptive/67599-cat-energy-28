@@ -1,1 +1,12 @@
 @use "../variables.scss";
+
+
+.form-group__area {
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 51px;
+  }
+}
