@@ -6,7 +6,6 @@
   grid-template-rows: minmax(55px, auto) 1fr minmax(40px, auto);
 
   @media (min-width: variables.$tablet-width) {
-    min-height: 387px;
     grid-template-columns: 1fr;
     grid-template-rows: 160px 60px 1fr minmax(40px, auto);
     padding: 0;
