@@ -16,10 +16,6 @@
   }
 }
 
-.main-nav__mobile {
-  @include mixins.list-style;
-}
-
 .site-list__item {
   text-decoration: none;
   border-bottom: 1px solid variables.$color-border-second;
