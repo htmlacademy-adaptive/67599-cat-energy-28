@@ -10,6 +10,10 @@
   text-transform: uppercase;
 }
 
+.main-nav__mobile {
+  @include mixins.list-style;
+}
+
 .main-nav__list {
   @include mixins.list-style;
   display: none;
