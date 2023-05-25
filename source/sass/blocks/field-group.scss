@@ -77,7 +77,8 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-      row-gap: 2px;
+      row-gap: 3px;
+      padding: 23px 30px;
     }
   }
 }
