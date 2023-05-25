@@ -4,6 +4,7 @@
   padding: 30px 0;
   background-color: variables.$color-background-second;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 53px;
 }

@@ -16,21 +16,21 @@
 
     @media (min-width: variables.$tablet-width) {
       left: 0;
-      top: 95px;
+      top: 89px;
     }
 
     @media (min-width: variables.$desktop-width) {
-      top: 97px;
+      top: 100px;
     }
   }
 
   @media (min-width: variables.$tablet-width) {
-    padding-top: 72px;
+    padding-top: 65px;
     padding-bottom: 38px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding-top: 73px;
+    padding-top: 76px;
     padding-bottom: 85px;
   }
 }
@@ -94,7 +94,7 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0 36px;
-    margin-bottom: 77px;
+    margin-bottom: 81px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -140,6 +140,7 @@
     border-top: 1px solid variables.$color-border-fifth;
 
     @media (min-width: variables.$tablet-width) {
+      padding-top: 14px;
       border: none;
     }
 

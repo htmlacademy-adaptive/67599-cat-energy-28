@@ -84,6 +84,12 @@
   @media (min-width: variables.$tablet-width) {
     background-color: transparent;
   }
+
+  &:focus {
+    @media (min-width: variables.$tablet-width) {
+      outline: none;
+    }
+  }
 }
 
 .main-nav__close {

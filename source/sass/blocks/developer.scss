@@ -48,8 +48,4 @@
   &:focus {
     outline: none;
   }
-
-  &:focus .social__icon {
-    color: variables.$color-background;
-  }
 }
