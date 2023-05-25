@@ -62,7 +62,7 @@
   &--about {
     @media (min-width: variables.$tablet-width) {
       padding: 0;
-      margin-bottom: 54px;
+      margin-bottom: 50px;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -109,7 +109,7 @@
       @media (min-width: variables.$tablet-width) {
         left: 0;
         right: 0;
-        top: 15px;
+        top: 20px;
       }
 
       @media (min-width: variables.$desktop-width) {

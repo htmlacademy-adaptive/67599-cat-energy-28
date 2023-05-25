@@ -12,12 +12,13 @@
   }
 
   @media (min-width: variables.$tablet-width) {
-    width: 480px;
+    width: 440px;
   }
 
   @media (min-width: variables.$desktop-width) {
     font-size: 20px;
     line-height: 30px;
+    width: 480px;
   }
 }
 

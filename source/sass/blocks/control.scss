@@ -77,6 +77,11 @@
   }
 }
 
+.control__input[type="radio"]:focus + .control__radio {
+  outline: 2px solid variables.$color-text;
+}
+
+
 .control__input[type="radio"]:disabled + .control__radio,
 .control__input[type="radio"]:disabled:hover + .control__radio {
   border: 1px solid variables.$color-control-hover;
@@ -103,6 +108,10 @@
     transform: translateY(-50%);
     left: 6px;
   }
+}
+
+.control__input[type="checkbox"]:focus + .control__checkbox {
+  outline: 2px solid variables.$color-text;
 }
 
 .control__input[type="checkbox"]:disabled + .control__checkbox,
